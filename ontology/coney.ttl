@@ -1,0 +1,317 @@
+# baseURI: http://purl.org/coney/coney#
+# prefix: coney
+
+@prefix coney: <http://purl.org/coney/coney#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ro: <http://purl.org/wf4ever/ro#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+coney:
+  a owl:Ontology ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+
+coney:Answer
+  a owl:Class ;
+  rdfs:label "Answer" ;
+  rdfs:subClassOf coney:SurveyElement ;
+.
+coney:ClosedAnswer
+  a owl:Class ;
+  rdfs:label "ClosedAnswer" ;
+  rdfs:subClassOf coney:Answer ;
+.
+coney:ClosedQuestion
+  a owl:Class ;
+  rdfs:label "ClosedQuestion" ;
+  rdfs:subClassOf coney:Question ;
+.
+coney:CompletedQuestion
+  a owl:Class ;
+  rdfs:label "CompletedQuestion" ;
+  rdfs:subClassOf wfdesc:Output ;
+.
+coney:CompletedSurvey
+  a owl:Class ;
+  rdfs:label "CompletedSurvey" ;
+  rdfs:subClassOf wfprov:Artifact ;
+.
+coney:Emoji
+  a coney:QuestionViz ;
+  rdfs:label "Emoji" ;
+.
+coney:OpenAnswer
+  a owl:Class ;
+  rdfs:label "OpenAnswer" ;
+  rdfs:subClassOf coney:Answer ;
+.
+coney:OpenQuestion
+  a owl:Class ;
+  rdfs:label "OpenQuestion" ;
+  rdfs:subClassOf coney:Question ;
+.
+coney:Option
+  a coney:QuestionViz ;
+  rdfs:label "Option" ;
+.
+coney:Participant
+  a owl:Class ;
+  rdfs:label "Participant" ;
+  rdfs:subClassOf prov:Agent ;
+.
+coney:Project
+  a owl:Class ;
+  rdfs:label "Project" ;
+  rdfs:subClassOf coney:SurveyTarget ;
+.
+coney:Question
+  a owl:Class ;
+  rdfs:label "Question" ;
+  rdfs:subClassOf coney:SurveyElement ;
+.
+coney:QuestionViz
+  a owl:Class ;
+  rdfs:label "Viz" ;
+  rdfs:subClassOf owl:Thing ;
+.
+coney:Scale
+  a coney:QuestionViz ;
+  rdfs:label "Scale" ;
+.
+coney:Slider
+  a coney:QuestionViz ;
+  rdfs:label "Slider" ;
+.
+coney:Survey
+  a owl:Class ;
+  rdfs:subClassOf ro:Resource ;
+  rdfs:subClassOf wfdesc:Process ;
+.
+coney:SurveyCompletion
+  a owl:Class ;
+  rdfs:label "SurveyCompletion" ;
+  rdfs:subClassOf wfprov:ProcessRun ;
+.
+coney:SurveyElement
+  a owl:Class ;
+  rdfs:label "Survey element" ;
+  rdfs:subClassOf prov:Entity ;
+.
+coney:SurveyTarget
+  a owl:Class ;
+  rdfs:label "SurveyTarget" ;
+  rdfs:subClassOf owl:Thing ;
+.
+coney:Tag
+  a owl:Class ;
+  rdfs:label "Tag" ;
+  rdfs:subClassOf owl:Thing ;
+.
+coney:Talk
+  a owl:Class ;
+  rdfs:label "Talk" ;
+  rdfs:subClassOf coney:SurveyElement ;
+.
+coney:completeQuestion
+  a owl:ObjectProperty ;
+  rdfs:domain coney:CompletedQuestion ;
+  rdfs:label "completeQuestion" ;
+  rdfs:range coney:Question ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+coney:completedFor
+  a owl:ObjectProperty ;
+  rdfs:domain coney:CompletedSurvey ;
+  rdfs:label "completedFor" ;
+  rdfs:range coney:SurveyTarget ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+coney:hasAnswer
+  a owl:ObjectProperty ;
+  rdfs:domain coney:CompletedQuestion ;
+  rdfs:label "hasAnswer" ;
+  rdfs:range coney:Answer ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+coney:hasAnswerText
+  a owl:DatatypeProperty ;
+  rdfs:domain coney:CompletedQuestion ;
+  rdfs:label "hasAnswerText" ;
+  rdfs:range xsd:string ;
+.
+coney:hasOrderNumber
+  a owl:DatatypeProperty ;
+  rdfs:domain coney:ClosedAnswer ;
+  rdfs:label "hasOrderNumber" ;
+  rdfs:range xsd:integer ;
+.
+coney:hasPoints
+  a owl:DatatypeProperty ;
+  rdfs:domain coney:ClosedAnswer ;
+  rdfs:label "hasPoints" ;
+  rdfs:range xsd:float ;
+.
+coney:hasProjectName
+  a owl:DatatypeProperty ;
+  rdfs:domain coney:Project ;
+  rdfs:label "hasProjectName" ;
+  rdfs:range xsd:string ;
+.
+coney:hasStatus
+  a owl:DatatypeProperty ;
+  rdfs:domain coney:Survey ;
+  rdfs:label "hasStatus" ;
+  rdfs:range xsd:string ;
+.
+coney:hasTag
+  a owl:ObjectProperty ;
+  rdfs:domain coney:Question ;
+  rdfs:label "hasTag" ;
+  rdfs:range coney:Tag ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+coney:hasText
+  a owl:DatatypeProperty ;
+  rdfs:domain coney:SurveyElement ;
+  rdfs:label "hasText" ;
+  rdfs:range xsd:string ;
+.
+coney:hasTimestamp
+  a owl:DatatypeProperty ;
+  rdfs:domain coney:CompletedQuestion ;
+  rdfs:label "hasTimestamp" ;
+  rdfs:range xsd:dateTime ;
+.
+coney:hasTitle
+  a owl:DatatypeProperty ;
+  rdfs:domain coney:Survey ;
+  rdfs:label "hasTitle" ;
+  rdfs:range xsd:string ;
+.
+coney:hasURL
+  a owl:DatatypeProperty ;
+  rdfs:domain coney:Talk ;
+  rdfs:label "hasURL" ;
+  rdfs:range xsd:anyURI ;
+.
+coney:hasValue
+  a owl:DatatypeProperty ;
+  rdfs:domain coney:ClosedAnswer ;
+  rdfs:label "hasValue" ;
+  rdfs:range xsd:float ;
+.
+coney:hasViz
+  a owl:ObjectProperty ;
+  rdfs:domain coney:ClosedQuestion ;
+  rdfs:label "hasViz" ;
+  rdfs:range coney:QuestionViz ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+coney:leadsTo
+  a owl:ObjectProperty ;
+  rdfs:domain coney:SurveyElement ;
+  rdfs:label "leadsTo" ;
+  rdfs:range coney:SurveyElement ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+coney:ofSurvey
+  a owl:ObjectProperty ;
+  rdfs:domain coney:SurveyElement ;
+  rdfs:label "ofSurvey" ;
+  rdfs:range coney:Survey ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+coney:starts
+  a owl:ObjectProperty ;
+  rdfs:domain coney:Survey ;
+  rdfs:label "starts" ;
+  rdfs:range coney:SurveyElement ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+ro:Resource
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+wfdesc:Output
+  a owl:Class ;
+  rdfs:label "Output" ;
+  rdfs:subClassOf owl:Thing ;
+.
+wfdesc:Process
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+wfdesc:hasOutput
+  a owl:ObjectProperty ;
+  rdfs:domain coney:Survey ;
+  rdfs:label "hasOutput" ;
+  rdfs:range coney:CompletedQuestion ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+wfprov:Artifact
+  a owl:Class ;
+  rdfs:label "Artifact" ;
+  rdfs:subClassOf prov:Entity ;
+.
+wfprov:ProcessRun
+  a owl:Class ;
+  rdfs:subClassOf prov:Activity ;
+.
+wfprov:describedByParameter
+  a owl:ObjectProperty ;
+  rdfs:domain coney:CompletedSurvey ;
+  rdfs:label "describedByParameter" ;
+  rdfs:range coney:CompletedQuestion ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+wfprov:describedByProcess
+  a owl:ObjectProperty ;
+  rdfs:domain coney:SurveyCompletion ;
+  rdfs:range coney:Survey ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+wfprov:wasOutputFrom
+  a owl:ObjectProperty ;
+  rdfs:domain coney:CompletedSurvey ;
+  rdfs:label "wasOutputFrom" ;
+  rdfs:range coney:SurveyCompletion ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+prov:Activity
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+prov:Agent
+  a owl:Class ;
+  rdfs:label "Agent" ;
+  rdfs:subClassOf owl:Thing ;
+.
+prov:Entity
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+prov:endedAtTime
+  a owl:DatatypeProperty ;
+  rdfs:domain prov:Activity ;
+  rdfs:label "endedAtTime" ;
+  rdfs:range xsd:dateTime ;
+.
+prov:startedAtTime
+  a owl:DatatypeProperty ;
+  rdfs:domain prov:Activity ;
+  rdfs:label "startedAtTime" ;
+  rdfs:range xsd:dateTime ;
+.
+prov:wasAttributedTo
+  a owl:ObjectProperty ;
+  rdfs:domain coney:CompletedSurvey ;
+  rdfs:label "wasAttributedTo" ;
+  rdfs:range coney:Participant ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
