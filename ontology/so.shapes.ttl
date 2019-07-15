@@ -1,180 +1,181 @@
-# baseURI: http://purl.org/coney
-# imports: http://datashapes.org/dash
-# prefix: coney
+# baseURI: http://purl.org/survey-ontology/shapes#
+# prefix: sosh
 
-@prefix coney: <http://purl.org/coney#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix so: <http://purl.org/survey-ontology/so#> .
+@prefix sosh: <http://purl.org/survey-ontology/shapes#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://purl.org/coney>
+sosh:
   a owl:Ontology ;
   owl:imports <http://datashapes.org/dash> ;
-  owl:versionInfo "Created with TopBraid Composer" ;
 .
-coney:AnswerShape
+
+
+sosh:AnswerShape
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Answer shape" ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
       sh:path [
-          sh:inversePath coney:starts ;
+          sh:inversePath so:starts ;
         ] ;
       sh:maxCount 0 ;
     ] ;
-  sh:targetClass coney:Answer ;
+  sh:targetClass so:Answer ;
   sh:xone (
       [
         sh:property [
-            sh:path coney:leadsTo ;
-            sh:class coney:Talk ;
+            sh:path so:leadsTo ;
+            sh:class so:Talk ;
             sh:maxCount 1 ;
           ] ;
       ]
       [
         sh:property [
-            sh:path coney:leadsTo ;
-            sh:class coney:Question ;
+            sh:path so:leadsTo ;
+            sh:class so:Question ;
             sh:maxCount 1 ;
           ] ;
       ]
     ) ;
 .
-coney:ClosedQuestionShape
+sosh:ClosedQuestionShape
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Closed question shape" ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
-      sh:path coney:hasViz ;
-      sh:class coney:Viz ;
+      sh:path so:hasViz ;
+      sh:class so:Viz ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
     ] ;
   sh:property [
-      sh:path coney:leadsTo ;
-      sh:class coney:ClosedAnswer ;
+      sh:path so:leadsTo ;
+      sh:class so:ClosedAnswer ;
       sh:minCount 1 ;
     ] ;
-  sh:targetClass coney:ClosedQuestion ;
+  sh:targetClass so:ClosedQuestion ;
 .
-coney:CompletedQuestionShape
+sosh:CompletedQuestionShape
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Completed question shape" ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
-      sh:path coney:hasAnswer ;
+      sh:path so:hasAnswer ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
     ] ;
-  sh:targetClass coney:CompletedQuestion ;
+  sh:targetClass so:CompletedQuestion ;
   sh:xone (
       [
         sh:property [
-            sh:path coney:completeQuestion ;
+            sh:path so:completeQuestion ;
             sh:maxCount 0 ;
           ] ;
       ]
       [
         sh:property [
             sh:path (
-                coney:hasAnswer
+                so:hasAnswer
                 [
-                  sh:inversePath coney:leadsTo ;
+                  sh:inversePath so:leadsTo ;
                 ]
               ) ;
-            sh:equals coney:completeQuestion ;
+            sh:equals so:completeQuestion ;
           ] ;
       ]
     ) ;
   sh:xone (
       [
         sh:property [
-            sh:path coney:hasAnswerText ;
+            sh:path so:hasAnswerText ;
             sh:maxCount 0 ;
           ] ;
       ]
       [
         sh:property [
-            sh:path coney:hasAnswerText ;
-            sh:class coney:OpenAnswer ;
+            sh:path so:hasAnswerText ;
+            sh:class so:OpenAnswer ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
           ] ;
       ]
     ) ;
 .
-coney:OpenAnswerShape
+sosh:OpenAnswerShape
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Open answer shape" ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
-      sh:path coney:hasText ;
+      sh:path so:hasText ;
       sh:maxCount 0 ;
     ] ;
 .
-coney:OpenQuestionShape
+sosh:OpenQuestionShape
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Open question shape" ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
-      sh:path coney:leadsTo ;
-      sh:class coney:OpenAnswer ;
+      sh:path so:leadsTo ;
+      sh:class so:OpenAnswer ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
     ] ;
-  sh:targetClass coney:OpenQuestion ;
+  sh:targetClass so:OpenQuestion ;
 .
-coney:QuestionShape
+sosh:QuestionShape
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Question shape" ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
-      sh:path coney:leadsTo ;
-      sh:class coney:Answer ;
+      sh:path so:leadsTo ;
+      sh:class so:Answer ;
       sh:minCount 1 ;
     ] ;
-  sh:targetClass coney:Question ;
+  sh:targetClass so:Question ;
 .
-coney:SurveyShape
+sosh:SurveyShape
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Survey shape" ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
-      sh:path coney:starts ;
-      sh:class coney:SurveyElement ;
+      sh:path so:starts ;
+      sh:class so:SurveyElement ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
     ] ;
-  sh:targetClass coney:Survey ;
+  sh:targetClass so:Survey ;
 .
-coney:TalkShape
+sosh:TalkShape
   a rdfs:Class ;
   a sh:NodeShape ;
   rdfs:label "Talk shape" ;
   rdfs:subClassOf rdfs:Resource ;
-  sh:targetClass coney:Talk ;
+  sh:targetClass so:Talk ;
   sh:xone (
       [
         sh:property [
-            sh:path coney:leadsTo ;
-            sh:class coney:Talk ;
+            sh:path so:leadsTo ;
+            sh:class so:Talk ;
             sh:maxCount 1 ;
           ] ;
       ]
       [
         sh:property [
-            sh:path coney:leadsTo ;
-            sh:class coney:Question ;
+            sh:path so:leadsTo ;
+            sh:class so:Question ;
             sh:maxCount 1 ;
           ] ;
       ]
