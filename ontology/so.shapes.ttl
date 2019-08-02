@@ -13,6 +13,7 @@
 sosh:
   a owl:Ontology ;
   owl:imports <http://datashapes.org/dash> ;
+  owl:imports so: ;
 .
 
 
@@ -23,7 +24,7 @@ sosh:AnswerShape
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
       sh:path [
-          sh:inversePath so:starts ;
+          sh:inversePath so:startsWith ;
         ] ;
       sh:maxCount 0 ;
     ] ;
@@ -51,8 +52,8 @@ sosh:ClosedQuestionShape
   rdfs:label "Closed question shape" ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
-      sh:path so:hasViz ;
-      sh:class so:Viz ;
+      sh:path so:hasVisualization ;
+      sh:class so:QuestionVisualization ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
     ] ;
@@ -77,7 +78,7 @@ sosh:CompletedQuestionShape
   sh:xone (
       [
         sh:property [
-            sh:path so:completeQuestion ;
+            sh:path so:completesQuestion ;
             sh:maxCount 0 ;
           ] ;
       ]
@@ -89,7 +90,7 @@ sosh:CompletedQuestionShape
                   sh:inversePath so:leadsTo ;
                 ]
               ) ;
-            sh:equals so:completeQuestion ;
+            sh:equals so:completesQuestion ;
           ] ;
       ]
     ) ;
@@ -151,12 +152,12 @@ sosh:SurveyShape
   rdfs:label "Survey shape" ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
-      sh:path so:starts ;
+      sh:path so:startsWith ;
       sh:class so:SurveyElement ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
     ] ;
-  sh:targetClass so:Survey ;
+  sh:targetClass so:SurveyProcedure ;
 .
 sosh:TalkShape
   a rdfs:Class ;
