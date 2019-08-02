@@ -19,87 +19,13 @@
 @prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-qb:ComponentSpecification
-  a owl:Class ;
-  rdfs:label "Component specification" ;
-  rdfs:subClassOf owl:Thing ;
-.
-qb:DataSet
-  a owl:Class ;
-  rdfs:label "Dataset" ;
-  rdfs:subClassOf owl:Thing ;
-.
-qb:DataStructureDefinition
-  a owl:Class ;
-  rdfs:label "Data structure definition" ;
-  rdfs:subClassOf owl:Thing ;
-.
-qb:Observation
-  a owl:Class ;
-  rdfs:label "Observation" ;
-  rdfs:subClassOf owl:Thing ;
-.
-qb:Slice
-  a owl:Class ;
-  rdfs:label "Slice" ;
-  rdfs:subClassOf owl:Thing ;
-.
-qb:SliceKey
-  a owl:Class ;
-  rdfs:label "Slice key" ;
-  rdfs:subClassOf owl:Thing ;
-.
-qb:component
-  a owl:ObjectProperty ;
-  rdfs:label "component" ;
-  rdfs:subPropertyOf owl:topObjectProperty ;
-.
-qb:componentProperty
-  a owl:ObjectProperty ;
-  rdfs:label "component property" ;
-  rdfs:subPropertyOf owl:topObjectProperty ;
-.
-qb:componentRequired
-  a owl:DatatypeProperty ;
-  rdfs:label "component required" ;
-  rdfs:range xsd:boolean ;
-.
-qb:dataSet
-  a owl:ObjectProperty ;
-  rdfs:domain qb:Observation ;
-  rdfs:label "data set" ;
-  rdfs:range qb:DataSet ;
-  rdfs:subPropertyOf owl:topObjectProperty ;
-.
-qb:dimension
-  a owl:ObjectProperty ;
-  rdfs:label "dimension" ;
-  rdfs:subPropertyOf owl:topObjectProperty ;
-.
-qb:measure
-  a owl:ObjectProperty ;
-  rdfs:label "measure" ;
-  rdfs:subPropertyOf owl:topObjectProperty ;
-.
-qb:observation
-  a owl:ObjectProperty ;
-  rdfs:domain qb:Slice ;
-  rdfs:label "observation" ;
-  rdfs:range qb:Observation ;
-  rdfs:subPropertyOf owl:topObjectProperty ;
-.
-qb:sliceKey
-  a owl:ObjectProperty ;
-  rdfs:label "slice key" ;
-  rdfs:subPropertyOf owl:topObjectProperty ;
-.
 so:
   a owl:Ontology ;
-  owl:imports <http://purl.org/linked-data/cube> ;
+  owl:imports qb: ;
   owl:imports ro: ;
-  owl:imports <http://purl.org/wf4ever/wfdesc> ;
+  owl:imports wfdesc: ;
   owl:imports wfprov: ;
-  owl:imports <http://w3id.org/rv-ontology> ;
+  owl:imports rvo: ;
   owl:imports prov: ;
 .
 so:Answer
@@ -275,7 +201,7 @@ so:Talk
 so:answeredIn
   a owl:ObjectProperty ;
   rdfs:domain so:CompletedQuestion ;
-  rdfs:label "answered by" ;
+  rdfs:label "answered in" ;
   rdfs:range so:SurveyCompletion ;
   rdfs:subPropertyOf owl:topObjectProperty ;
 .
@@ -406,101 +332,5 @@ so:startsWith
   rdfs:domain so:SurveyProcedure ;
   rdfs:label "starts with" ;
   rdfs:range so:SurveyElement ;
-  rdfs:subPropertyOf owl:topObjectProperty ;
-.
-ro:ResearchObject
-  a owl:Class ;
-  rdfs:label "Research object" ;
-  rdfs:subClassOf owl:Thing ;
-.
-ro:Resource
-  a owl:Class ;
-  rdfs:subClassOf owl:Thing ;
-.
-wfdesc:Output
-  a owl:Class ;
-  rdfs:label "Output" ;
-  rdfs:subClassOf owl:Thing ;
-.
-wfdesc:Process
-  a owl:Class ;
-  rdfs:subClassOf owl:Thing ;
-.
-wfdesc:hasOutput
-  a owl:ObjectProperty ;
-  rdfs:domain wfdesc:Process ;
-  rdfs:label "has output" ;
-  rdfs:range wfdesc:Output ;
-  rdfs:subPropertyOf owl:topObjectProperty ;
-.
-wfprov:Artifact
-  a owl:Class ;
-  rdfs:label "Artifact" ;
-  rdfs:subClassOf prov:Entity ;
-.
-wfprov:ProcessRun
-  a owl:Class ;
-  rdfs:subClassOf prov:Activity ;
-.
-wfprov:describedByParameter
-  a owl:ObjectProperty ;
-  rdfs:domain wfprov:Artifact ;
-  rdfs:label "described by parameter" ;
-  rdfs:range wfdesc:Output ;
-  rdfs:subPropertyOf owl:topObjectProperty ;
-.
-wfprov:describedByProcess
-  a owl:ObjectProperty ;
-  rdfs:domain wfprov:ProcessRun ;
-  rdfs:range wfdesc:Process ;
-  rdfs:subPropertyOf owl:topObjectProperty ;
-.
-wfprov:wasOutputFrom
-  a owl:ObjectProperty ;
-  rdfs:domain wfprov:Artifact ;
-  rdfs:label "was output from" ;
-  rdfs:range wfprov:ProcessRun ;
-  rdfs:subPropertyOf owl:topObjectProperty ;
-.
-rvo:Model
-  a owl:Class ;
-  rdfs:label "Model" ;
-  rdfs:subClassOf ro:Resource ;
-.
-rvo:Variable
-  a owl:Class ;
-  rdfs:label "Variable" ;
-  rdfs:subClassOf owl:Thing ;
-.
-prov:Activity
-  a owl:Class ;
-  rdfs:subClassOf owl:Thing ;
-.
-prov:Agent
-  a owl:Class ;
-  rdfs:label "Agent" ;
-  rdfs:subClassOf owl:Thing ;
-.
-prov:Entity
-  a owl:Class ;
-  rdfs:subClassOf owl:Thing ;
-.
-prov:endedAtTime
-  a owl:DatatypeProperty ;
-  rdfs:domain prov:Activity ;
-  rdfs:label "ended at time" ;
-  rdfs:range xsd:dateTime ;
-.
-prov:startedAtTime
-  a owl:DatatypeProperty ;
-  rdfs:domain prov:Activity ;
-  rdfs:label "started at time" ;
-  rdfs:range xsd:dateTime ;
-.
-prov:wasAttributedTo
-  a owl:ObjectProperty ;
-  rdfs:domain so:CompletedSurvey ;
-  rdfs:label "was attributed to" ;
-  rdfs:range prov:Agent ;
   rdfs:subPropertyOf owl:topObjectProperty ;
 .
