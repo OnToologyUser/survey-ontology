@@ -1,4 +1,3 @@
-
-ontology/cube.ttl
-ontology/rvo.rdf
-ontology/wfdesc.rdf
+ontology/*
+!ontology/so.*
+!ontology/so.shapes.*
