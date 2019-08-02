@@ -1,4 +1,10 @@
 # baseURI: http://purl.org/survey-ontology/so#
+# imports: http://purl.org/linked-data/cube
+# imports: http://purl.org/wf4ever/ro#
+# imports: http://purl.org/wf4ever/wfdesc
+# imports: http://purl.org/wf4ever/wfprov#
+# imports: http://w3id.org/rv-ontology
+# imports: http://www.w3.org/ns/prov#
 # prefix: so
 
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -13,6 +19,11 @@
 @prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+qb:ComponentSpecification
+  a owl:Class ;
+  rdfs:label "Component specification" ;
+  rdfs:subClassOf owl:Thing ;
+.
 qb:DataSet
   a owl:Class ;
   rdfs:label "Dataset" ;
@@ -33,11 +44,41 @@ qb:Slice
   rdfs:label "Slice" ;
   rdfs:subClassOf owl:Thing ;
 .
+qb:SliceKey
+  a owl:Class ;
+  rdfs:label "Slice key" ;
+  rdfs:subClassOf owl:Thing ;
+.
+qb:component
+  a owl:ObjectProperty ;
+  rdfs:label "component" ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+qb:componentProperty
+  a owl:ObjectProperty ;
+  rdfs:label "component property" ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+qb:componentRequired
+  a owl:DatatypeProperty ;
+  rdfs:label "component required" ;
+  rdfs:range xsd:boolean ;
+.
 qb:dataSet
   a owl:ObjectProperty ;
   rdfs:domain qb:Observation ;
   rdfs:label "data set" ;
   rdfs:range qb:DataSet ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+qb:dimension
+  a owl:ObjectProperty ;
+  rdfs:label "dimension" ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+qb:measure
+  a owl:ObjectProperty ;
+  rdfs:label "measure" ;
   rdfs:subPropertyOf owl:topObjectProperty ;
 .
 qb:observation
@@ -47,13 +88,30 @@ qb:observation
   rdfs:range qb:Observation ;
   rdfs:subPropertyOf owl:topObjectProperty ;
 .
+qb:sliceKey
+  a owl:ObjectProperty ;
+  rdfs:label "slice key" ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
 so:
   a owl:Ontology ;
+  owl:imports <http://purl.org/linked-data/cube> ;
+  owl:imports ro: ;
+  owl:imports <http://purl.org/wf4ever/wfdesc> ;
+  owl:imports wfprov: ;
+  owl:imports <http://w3id.org/rv-ontology> ;
+  owl:imports prov: ;
 .
 so:Answer
   a owl:Class ;
   rdfs:label "Answer" ;
   rdfs:subClassOf so:SurveyElement ;
+  owl:disjointWith so:Question ;
+  owl:disjointWith so:Talk ;
+.
+so:Checkbox
+  a so:QuestionVisualization ;
+  rdfs:label "Checkbox" ;
 .
 so:ClosedAnswer
   a owl:Class ;
@@ -114,6 +172,8 @@ so:Question
   a owl:Class ;
   rdfs:label "Question" ;
   rdfs:subClassOf so:SurveyElement ;
+  owl:disjointWith so:Answer ;
+  owl:disjointWith so:Talk ;
 .
 so:QuestionVisualization
   a owl:Class ;
@@ -123,6 +183,20 @@ so:QuestionVisualization
 so:Scale
   a so:QuestionVisualization ;
   rdfs:label "Scale" ;
+.
+so:Select
+  a so:QuestionVisualization ;
+  rdfs:label "Select" ;
+.
+so:SliceByQuestion
+  a qb:SliceKey ;
+  qb:componentProperty so:completesQuestion ;
+  rdfs:label "Slice by question" ;
+.
+so:SliceBySession
+  a qb:SliceKey ;
+  qb:componentProperty so:answeredIn ;
+  rdfs:label "Slice by session" ;
 .
 so:Slider
   a so:QuestionVisualization ;
@@ -146,6 +220,33 @@ so:SurveyDataSet
 .
 so:SurveyDataStructureDefinition
   a qb:DataStructureDefinition ;
+  qb:component [
+      a qb:ComponentSpecification ;
+      qb:componentRequired false ;
+      qb:measure so:hasAnswer ;
+    ] ;
+  qb:component [
+      a qb:ComponentSpecification ;
+      qb:componentRequired false ;
+      qb:measure so:hasAnswerText ;
+    ] ;
+  qb:component [
+      a qb:ComponentSpecification ;
+      qb:componentRequired true ;
+      qb:dimension so:answeredIn ;
+    ] ;
+  qb:component [
+      a qb:ComponentSpecification ;
+      qb:componentRequired true ;
+      qb:dimension so:completesQuestion ;
+    ] ;
+  qb:component [
+      a qb:ComponentSpecification ;
+      qb:componentRequired true ;
+      qb:measure so:hasCompletionTimestamp ;
+    ] ;
+  qb:sliceKey so:SliceByQuestion ;
+  qb:sliceKey so:SliceBySession ;
   rdfs:label "Survey data structure definition" ;
 .
 so:SurveyElement
@@ -155,6 +256,7 @@ so:SurveyElement
 .
 so:SurveyProcedure
   a owl:Class ;
+  rdfs:label "Survey procedure" ;
   rdfs:subClassOf ro:Resource ;
   rdfs:subClassOf wfdesc:Process ;
 .
@@ -167,12 +269,14 @@ so:Talk
   a owl:Class ;
   rdfs:label "Talk" ;
   rdfs:subClassOf so:SurveyElement ;
+  owl:disjointWith so:Answer ;
+  owl:disjointWith so:Question ;
 .
-so:answeredBy
+so:answeredIn
   a owl:ObjectProperty ;
   rdfs:domain so:CompletedQuestion ;
   rdfs:label "answered by" ;
-  rdfs:range so:Participant ;
+  rdfs:range so:SurveyCompletion ;
   rdfs:subPropertyOf owl:topObjectProperty ;
 .
 so:completedFor
@@ -284,6 +388,18 @@ so:leadsTo
   rdfs:label "leads to" ;
   rdfs:range so:SurveyElement ;
   rdfs:subPropertyOf owl:topObjectProperty ;
+.
+so:participantId
+  a owl:DatatypeProperty ;
+  rdfs:domain so:Participant ;
+  rdfs:label "participant id" ;
+  rdfs:range xsd:string ;
+.
+so:sessionId
+  a owl:DatatypeProperty ;
+  rdfs:domain so:SurveyCompletion ;
+  rdfs:label "session id" ;
+  rdfs:range xsd:string ;
 .
 so:startsWith
   a owl:ObjectProperty ;
