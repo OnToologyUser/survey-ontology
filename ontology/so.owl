@@ -554,27 +554,27 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/so-ontology#SurveyDataStructureDefinition">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
         <qb:component>
-            <rdf:Description rdf:nodeID="_:genid1">
+            <rdf:Description rdf:nodeID="bn_id1">
                 <qb:measure rdf:resource="https://w3id.org/so-ontology#hasAnswer"/>
             </rdf:Description>
         </qb:component>
         <qb:component>
-            <rdf:Description rdf:nodeID="_:genid2">
+            <rdf:Description rdf:nodeID="bn_id2">
                 <qb:dimension rdf:resource="https://w3id.org/so-ontology#answeredIn"/>
             </rdf:Description>
         </qb:component>
         <qb:component>
-            <rdf:Description rdf:nodeID="_:genid3">
+            <rdf:Description rdf:nodeID="bn_id3">
                 <qb:measure rdf:resource="https://w3id.org/so-ontology#hasAnswerText"/>
             </rdf:Description>
         </qb:component>
         <qb:component>
-            <rdf:Description rdf:nodeID="_:genid4">
+            <rdf:Description rdf:nodeID="bn_id4">
                 <qb:measure rdf:resource="https://w3id.org/so-ontology#hasCompletionTimestamp"/>
             </rdf:Description>
         </qb:component>
         <qb:component>
-            <rdf:Description rdf:nodeID="_:genid5">
+            <rdf:Description rdf:nodeID="bn_id5">
                 <qb:dimension rdf:resource="https://w3id.org/so-ontology#completesQuestion"/>
             </rdf:Description>
         </qb:component>
