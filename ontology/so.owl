@@ -20,18 +20,19 @@
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:wot="http://xmlns.com/wot/0.1/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/">
 
     <owl:Ontology rdf:about="https://w3id.org/so-ontology#">
         <dc:title xml:lang="en">The Survey Ontology</dc:title>
         <dc:subject xml:lang="en">Survey, Question, Answer, Variable</dc:subject>
         <rdfs:label xml:lang="en">Survey Ontology</rdfs:label>
-        <dc:creator xml:lang="en">Mario Scrocca, Cefriel</dc:creator>
-        <dc:creator xml:lang="en">Damiano Scandolari, Cefriel</dc:creator>
-        <dc:creator xml:lang="en">Gloria Re Calegari, Cefriel</dc:creator>
-        <dc:creator xml:lang="en">Irene Celino, Cefriel</dc:creator>
-        <owl:versionInfo xml:lang="en">V 1.0, Release 2011-10-01</owl:versionInfo>
-        <dc:rights xml:lang="en">The Survey Ontology is available under the Creative Commons Attribution 3.0 Unported license; see http://creativecommons.org/licenses/by/3.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement "This work is based on the Survey Ontology, developed by Cefriel" and link back to https://w3id.org/so-ontology</dc:rights>
+        <dc:creator xml:lang="en">Mario Scrocca</dc:creator>
+        <dc:creator xml:lang="en">Damiano Scandolari</dc:creator>
+        <dc:creator xml:lang="en">Gloria Re Calegari</dc:creator>
+        <dc:creator xml:lang="en">Irene Celino</dc:creator>
+        <owl:versionInfo xml:lang="en">V 1.0, Release 2019</owl:versionInfo>
+        <dc:rights xml:lang="en">The Survey Ontology is available under the Creative Commons Attribution 3.0 Unported license; see http://creativecommons.org/licenses/by/3.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement "This work is based on the Survey Ontology, developed by the Knowledge Technologies group at Cefriel, Milan" and link back to https://w3id.org/so-ontology</dc:rights>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <rdfs:comment xml:lang="en">Ontology for surveys based on the Coney data model.</rdfs:comment>
         <dc:contributor xml:lang="en">Work on the Survey Ontology and Coney (https://survey.actionproject.eu/coney/) was partially supported by the ACTION project (grant agreement number 824603), co-funded by the European Commission under the Horizon 2020 Framework Programme.</dc:contributor>
