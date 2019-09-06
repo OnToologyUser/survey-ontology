@@ -22,12 +22,14 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://w3id.org/so-ontology#">
+        <!--
         <owl:imports rdf:resource="http://w3id.org/rv-ontology#"/>
         <owl:imports rdf:resource="http://purl.org/wf4ever/ro#"/>
         <owl:imports rdf:resource="http://purl.org/wf4ever/wfdesc#"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
         <owl:imports rdf:resource="http://purl.org/linked-data/cube#"/>
         <owl:imports rdf:resource="http://purl.org/wf4ever/wfprov#"/>
+        -->
     </owl:Ontology>
     
 
