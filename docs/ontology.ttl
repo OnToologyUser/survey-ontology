@@ -1,0 +1,511 @@
+@prefix : <https://w3id.org/so-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/so-ontology#> .
+
+<https://w3id.org/so-ontology#> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/linked-data/cube#component
+<http://purl.org/linked-data/cube#component> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/linked-data/cube#componentProperty
+<http://purl.org/linked-data/cube#componentProperty> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/linked-data/cube#componentRequired
+<http://purl.org/linked-data/cube#componentRequired> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/linked-data/cube#dimension
+<http://purl.org/linked-data/cube#dimension> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/linked-data/cube#measure
+<http://purl.org/linked-data/cube#measure> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/linked-data/cube#sliceKey
+<http://purl.org/linked-data/cube#sliceKey> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/so-ontology#answeredIn
+:answeredIn rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :CompletedQuestion ;
+            rdfs:range :SurveyCompletion .
+
+
+###  https://w3id.org/so-ontology#completedFor
+:completedFor rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :SurveyCompletion ;
+              rdfs:range :SurveyTarget ;
+              rdfs:label "completed for" .
+
+
+###  https://w3id.org/so-ontology#completesQuestion
+:completesQuestion rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain :CompletedQuestion ;
+                   rdfs:range :Question .
+
+
+###  https://w3id.org/so-ontology#hasAnswer
+:hasAnswer rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :CompletedQuestion ;
+           rdfs:range :Answer .
+
+
+###  https://w3id.org/so-ontology#hasLatentVariable
+:hasLatentVariable rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain :Question ;
+                   rdfs:range :LatentVariable ;
+                   rdfs:label "has latent variable" .
+
+
+###  https://w3id.org/so-ontology#hasObservableVariable
+:hasObservableVariable rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain :Question ;
+                       rdfs:range :ObservableVariable ;
+                       rdfs:label "has observable variable" .
+
+
+###  https://w3id.org/so-ontology#hasVisualization
+:hasVisualization rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain :ClosedQuestion ;
+                  rdfs:range :QuestionVisualization ;
+                  rdfs:label "has visualization" .
+
+
+###  https://w3id.org/so-ontology#inSurveyProcedure
+:inSurveyProcedure rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain :SurveyElement ;
+                   rdfs:range :SurveyProcedure ;
+                   rdfs:label "in survey procedure" .
+
+
+###  https://w3id.org/so-ontology#leadsTo
+:leadsTo rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :SurveyElement ;
+         rdfs:range :SurveyElement ;
+         rdfs:label "leads to" .
+
+
+###  https://w3id.org/so-ontology#startsWith
+:startsWith rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :SurveyProcedure ;
+            rdfs:range :SurveyElement ;
+            rdfs:label "starts with" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/so-ontology#hasAnswerText
+:hasAnswerText rdf:type owl:DatatypeProperty ;
+               rdfs:domain :CompletedQuestion ;
+               rdfs:range xsd:string .
+
+
+###  https://w3id.org/so-ontology#hasCompletionTimestamp
+:hasCompletionTimestamp rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :CompletedQuestion ;
+                        rdfs:range xsd:dateTime .
+
+
+###  https://w3id.org/so-ontology#hasLink
+:hasLink rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Talk ;
+         rdfs:range xsd:anyURI ;
+         rdfs:label "has link" .
+
+
+###  https://w3id.org/so-ontology#hasOrderNumber
+:hasOrderNumber rdf:type owl:DatatypeProperty ;
+                rdfs:domain :ClosedAnswer ;
+                rdfs:range xsd:integer ;
+                rdfs:label "has order number" .
+
+
+###  https://w3id.org/so-ontology#hasPoints
+:hasPoints rdf:type owl:DatatypeProperty ;
+           rdfs:domain :ClosedAnswer ;
+           rdfs:range xsd:float ;
+           rdfs:label "has points" .
+
+
+###  https://w3id.org/so-ontology#hasStatus
+:hasStatus rdf:type owl:DatatypeProperty ;
+           rdfs:domain :SurveyProcedure ;
+           rdfs:range xsd:string ;
+           rdfs:label "has status" .
+
+
+###  https://w3id.org/so-ontology#hasText
+:hasText rdf:type owl:DatatypeProperty ;
+         rdfs:domain :SurveyElement ;
+         rdfs:range xsd:string ;
+         rdfs:label "has text" .
+
+
+###  https://w3id.org/so-ontology#hasTitle
+:hasTitle rdf:type owl:DatatypeProperty ;
+          rdfs:domain :SurveyProcedure ;
+          rdfs:range xsd:string ;
+          rdfs:label "has title" .
+
+
+###  https://w3id.org/so-ontology#hasValue
+:hasValue rdf:type owl:DatatypeProperty ;
+          rdfs:domain :ClosedAnswer ;
+          rdfs:range xsd:float ;
+          rdfs:label "has value" .
+
+
+###  https://w3id.org/so-ontology#participantId
+:participantId rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Participant ;
+               rdfs:range xsd:string ;
+               rdfs:label "participant id" .
+
+
+###  https://w3id.org/so-ontology#sessionId
+:sessionId rdf:type owl:DatatypeProperty ;
+           rdfs:domain :SurveyCompletion ;
+           rdfs:range xsd:string ;
+           rdfs:label "session id" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/linked-data/cube#ComponentSpecification
+<http://purl.org/linked-data/cube#ComponentSpecification> rdf:type owl:Class .
+
+
+###  http://purl.org/linked-data/cube#DataSet
+<http://purl.org/linked-data/cube#DataSet> rdf:type owl:Class .
+
+
+###  http://purl.org/linked-data/cube#DataStructureDefinition
+<http://purl.org/linked-data/cube#DataStructureDefinition> rdf:type owl:Class .
+
+
+###  http://purl.org/linked-data/cube#Observation
+<http://purl.org/linked-data/cube#Observation> rdf:type owl:Class .
+
+
+###  http://purl.org/linked-data/cube#Slice
+<http://purl.org/linked-data/cube#Slice> rdf:type owl:Class .
+
+
+###  http://purl.org/linked-data/cube#SliceKey
+<http://purl.org/linked-data/cube#SliceKey> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/ro#ResearchObject
+<http://purl.org/wf4ever/ro#ResearchObject> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/ro#Resource
+<http://purl.org/wf4ever/ro#Resource> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/wfdesc#Output
+<http://purl.org/wf4ever/wfdesc#Output> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/wfdesc#Process
+<http://purl.org/wf4ever/wfdesc#Process> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/wfprov#Artifact
+<http://purl.org/wf4ever/wfprov#Artifact> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/wfprov#ProcessRun
+<http://purl.org/wf4ever/wfprov#ProcessRun> rdf:type owl:Class .
+
+
+###  http://w3id.org/rv-ontology#Variable
+<http://w3id.org/rv-ontology#Variable> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> rdf:type owl:Class .
+
+
+###  https://w3id.org/so-ontology#Answer
+:Answer rdf:type owl:Class ;
+        rdfs:subClassOf :SurveyElement ;
+        owl:disjointWith :Question ,
+                         :Talk ;
+        rdfs:label "Answer" .
+
+
+###  https://w3id.org/so-ontology#ClosedAnswer
+:ClosedAnswer rdf:type owl:Class ;
+              rdfs:subClassOf :Answer ;
+              rdfs:label "Closed answer" .
+
+
+###  https://w3id.org/so-ontology#ClosedQuestion
+:ClosedQuestion rdf:type owl:Class ;
+                rdfs:subClassOf :Question ;
+                rdfs:label "Closed question" .
+
+
+###  https://w3id.org/so-ontology#CompletedQuestion
+:CompletedQuestion rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.org/linked-data/cube#Observation> ,
+                                   <http://purl.org/wf4ever/wfdesc#Output> ;
+                   rdfs:label "Completed question" .
+
+
+###  https://w3id.org/so-ontology#CompletedSurvey
+:CompletedSurvey rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.org/linked-data/cube#Slice> ,
+                                 <http://purl.org/wf4ever/wfprov#Artifact> ;
+                 rdfs:label "CompletedSurvey" .
+
+
+###  https://w3id.org/so-ontology#LatentVariable
+:LatentVariable rdf:type owl:Class ;
+                rdfs:subClassOf <http://w3id.org/rv-ontology#Variable> ;
+                rdfs:label "Latent variable" .
+
+
+###  https://w3id.org/so-ontology#ObservableVariable
+:ObservableVariable rdf:type owl:Class ;
+                    rdfs:subClassOf <http://w3id.org/rv-ontology#Variable> ;
+                    rdfs:label "Observable variable" .
+
+
+###  https://w3id.org/so-ontology#OpenAnswer
+:OpenAnswer rdf:type owl:Class ;
+            rdfs:subClassOf :Answer ;
+            rdfs:label "Open answer" .
+
+
+###  https://w3id.org/so-ontology#OpenQuestion
+:OpenQuestion rdf:type owl:Class ;
+              rdfs:subClassOf :Question ;
+              rdfs:label "Open question" .
+
+
+###  https://w3id.org/so-ontology#Participant
+:Participant rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ;
+             rdfs:label "Participant" .
+
+
+###  https://w3id.org/so-ontology#Question
+:Question rdf:type owl:Class ;
+          rdfs:subClassOf :SurveyElement ;
+          owl:disjointWith :Talk ;
+          rdfs:label "Question" .
+
+
+###  https://w3id.org/so-ontology#QuestionVisualization
+:QuestionVisualization rdf:type owl:Class ;
+                       rdfs:subClassOf owl:Thing ;
+                       rdfs:label "Question visualization" .
+
+
+###  https://w3id.org/so-ontology#Survey
+:Survey rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.org/wf4ever/ro#ResearchObject> ;
+        rdfs:label "Survey" .
+
+
+###  https://w3id.org/so-ontology#SurveyCompletion
+:SurveyCompletion rdf:type owl:Class ;
+                  rdfs:subClassOf <http://purl.org/wf4ever/wfprov#ProcessRun> ;
+                  rdfs:label "Survey completion" .
+
+
+###  https://w3id.org/so-ontology#SurveyDataSet
+:SurveyDataSet rdf:type owl:Class ;
+               rdfs:subClassOf <http://purl.org/linked-data/cube#DataSet> ,
+                               <http://purl.org/wf4ever/ro#Resource> ;
+               rdfs:label "Survey dataset" .
+
+
+###  https://w3id.org/so-ontology#SurveyElement
+:SurveyElement rdf:type owl:Class ;
+               rdfs:subClassOf owl:Thing ;
+               rdfs:label "Survey element" .
+
+
+###  https://w3id.org/so-ontology#SurveyProcedure
+:SurveyProcedure rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.org/wf4ever/ro#Resource> ,
+                                 <http://purl.org/wf4ever/wfdesc#Process> ;
+                 rdfs:label "Survey procedure" .
+
+
+###  https://w3id.org/so-ontology#SurveyTarget
+:SurveyTarget rdf:type owl:Class ;
+              rdfs:subClassOf owl:Thing ;
+              rdfs:label "Survey target" .
+
+
+###  https://w3id.org/so-ontology#Talk
+:Talk rdf:type owl:Class ;
+      rdfs:subClassOf :SurveyElement ;
+      rdfs:label "Talk" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/so-ontology#Checkbox
+:Checkbox rdf:type owl:NamedIndividual ,
+                   :QuestionVisualization ;
+          rdfs:label "Checkbox" .
+
+
+###  https://w3id.org/so-ontology#Emoji
+:Emoji rdf:type owl:NamedIndividual ,
+                :QuestionVisualization ;
+       rdfs:label "Emoji" .
+
+
+###  https://w3id.org/so-ontology#Option
+:Option rdf:type owl:NamedIndividual ,
+                 :QuestionVisualization ;
+        rdfs:label "Option" .
+
+
+###  https://w3id.org/so-ontology#Scale
+:Scale rdf:type owl:NamedIndividual ,
+                :QuestionVisualization ;
+       rdfs:label "Scale" .
+
+
+###  https://w3id.org/so-ontology#Select
+:Select rdf:type owl:NamedIndividual ,
+                 :QuestionVisualization ;
+        rdfs:label "Select" .
+
+
+###  https://w3id.org/so-ontology#SliceByQuestion
+:SliceByQuestion rdf:type owl:NamedIndividual ,
+                          <http://purl.org/linked-data/cube#SliceKey> ;
+                 <http://purl.org/linked-data/cube#componentProperty> :completesQuestion ;
+                 rdfs:label "Slice by question" .
+
+
+###  https://w3id.org/so-ontology#SliceBySession
+:SliceBySession rdf:type owl:NamedIndividual ,
+                         <http://purl.org/linked-data/cube#SliceKey> ;
+                <http://purl.org/linked-data/cube#componentProperty> :answeredIn ;
+                rdfs:label "Slice by session" .
+
+
+###  https://w3id.org/so-ontology#Slider
+:Slider rdf:type owl:NamedIndividual ,
+                 :QuestionVisualization ;
+        rdfs:label "Slider" .
+
+
+###  https://w3id.org/so-ontology#SurveyDataStructureDefinition
+:SurveyDataStructureDefinition rdf:type owl:NamedIndividual ,
+                                        <http://purl.org/linked-data/cube#DataStructureDefinition> ;
+                               <http://purl.org/linked-data/cube#component> [ <http://purl.org/linked-data/cube#measure> :hasAnswer
+                                                                            ] ,
+                                                                            [ <http://purl.org/linked-data/cube#dimension> :answeredIn
+                                                                            ] ,
+                                                                            [ <http://purl.org/linked-data/cube#measure> :hasAnswerText
+                                                                            ] ,
+                                                                            [ <http://purl.org/linked-data/cube#measure> :hasCompletionTimestamp
+                                                                            ] ,
+                                                                            [ <http://purl.org/linked-data/cube#dimension> :completesQuestion
+                                                                            ] ;
+                               <http://purl.org/linked-data/cube#sliceKey> :SliceByQuestion ,
+                                                                           :SliceBySession ;
+                               rdfs:label "Survey data structure definition" .
+
+
+###  https://w3id.org/so-ontology#answeredIn
+:answeredIn rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/so-ontology#completesQuestion
+:completesQuestion rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/so-ontology#hasAnswer
+:hasAnswer rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/so-ontology#hasAnswerText
+:hasAnswerText rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/so-ontology#hasCompletionTimestamp
+:hasCompletionTimestamp rdf:type owl:NamedIndividual .
+
+
+[ rdf:type <http://purl.org/linked-data/cube#ComponentSpecification> ;
+  <http://purl.org/linked-data/cube#componentRequired> "false"^^xsd:boolean
+] .
+
+[ rdf:type <http://purl.org/linked-data/cube#ComponentSpecification> ;
+   <http://purl.org/linked-data/cube#componentRequired> "false"^^xsd:boolean
+ ] .
+
+[ rdf:type <http://purl.org/linked-data/cube#ComponentSpecification> ;
+   <http://purl.org/linked-data/cube#componentRequired> "true"^^xsd:boolean
+ ] .
+
+[ rdf:type <http://purl.org/linked-data/cube#ComponentSpecification> ;
+   <http://purl.org/linked-data/cube#componentRequired> "true"^^xsd:boolean
+ ] .
+
+[ rdf:type <http://purl.org/linked-data/cube#ComponentSpecification> ;
+   <http://purl.org/linked-data/cube#componentRequired> "true"^^xsd:boolean
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+:answeredIn rdfs:label "answered in" .
+
+
+:completesQuestion rdfs:label "completes question" .
+
+
+:hasAnswer rdfs:label "has answer" .
+
+
+:hasAnswerText rdfs:label "has answer text" .
+
+
+:hasCompletionTimestamp rdfs:label "has completion timestamp" .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
