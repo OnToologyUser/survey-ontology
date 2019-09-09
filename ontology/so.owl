@@ -1,27 +1,21 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/so-ontology#"
      xml:base="https://w3id.org/so-ontology"
-     xmlns:dcmi-terms="http://dublincore.org/documents/dcmi-terms/"
-     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rvo="http://w3id.org/rv-ontology#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:qb="http://purl.org/linked-data/cube#"
-     xmlns:core="http://purl.org/vocab/frbr/core#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:wfprov="http://purl.org/wf4ever/wfprov#"
      xmlns:so="https://w3id.org/so-ontology#"
      xmlns:ro="http://purl.org/wf4ever/ro#"
      xmlns:wfdesc="http://purl.org/wf4ever/wfdesc#"
      xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:wot="http://xmlns.com/wot/0.1/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:dcterms="http://purl.org/dc/terms/">
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:vann="http://purl.org/vocab/vann/">
 
     <owl:Ontology rdf:about="https://w3id.org/so-ontology#">
         <dc:title xml:lang="en">The Survey Ontology</dc:title>
@@ -32,17 +26,21 @@
         <dc:creator xml:lang="en">Gloria Re Calegari</dc:creator>
         <dc:creator xml:lang="en">Irene Celino</dc:creator>
         <owl:versionInfo xml:lang="en">V 1.0, Release 2019</owl:versionInfo>
+        <vann:preferredNamespaceUri>https://w3id.org/so-ontology#</vann:preferredNamespaceUri>
+        <vann:preferredNamespacePrefix>so</vann:preferredNamespacePrefix>
         <dc:rights xml:lang="en">The Survey Ontology is available under the Creative Commons Attribution 3.0 Unported license; see http://creativecommons.org/licenses/by/3.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement "This work is based on the Survey Ontology, developed by the Knowledge Technologies group at Cefriel, Milan" and link back to https://w3id.org/so-ontology</dc:rights>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <rdfs:comment xml:lang="en">Ontology for surveys based on the Coney data model.</rdfs:comment>
         <dc:contributor xml:lang="en">Work on the Survey Ontology and Coney (https://survey.actionproject.eu/coney/) was partially supported by the ACTION project (grant agreement number 824603), co-funded by the European Commission under the Horizon 2020 Framework Programme.</dc:contributor>
         <foaf:homepage rdf:resource="https://w3id.org/so-ontology"/>
+        <!--
         <owl:imports rdf:resource="http://w3id.org/rv-ontology#"/>
         <owl:imports rdf:resource="http://purl.org/wf4ever/ro#"/>
         <owl:imports rdf:resource="http://purl.org/wf4ever/wfdesc#"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
         <owl:imports rdf:resource="http://purl.org/linked-data/cube#"/>
         <owl:imports rdf:resource="http://purl.org/wf4ever/wfprov#"/>
+        -->
     </owl:Ontology>
     
 

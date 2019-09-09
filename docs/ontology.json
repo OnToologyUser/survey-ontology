@@ -59,40 +59,119 @@
     "@value" : "true"
   } ]
 }, {
-  "@id" : "http://creativecommons.org/licenses/by/3.0/",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/rights",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#ComponentSpecification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#DataSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#DataStructureDefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#Observation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#Slice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#SliceKey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#componentProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#componentRequired",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#dimension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#measure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#sliceKey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/ro#ResearchObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/ro#Resource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wfdesc#Output",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wfdesc#Process",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wfprov#Artifact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wfprov#ProcessRun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://w3id.org/rv-ontology#Variable",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/so-ontology",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+  "@id" : "http://www.w3.org/ns/prov#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/so-ontology#",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "en",
     "@value" : "Work on the Survey Ontology and Coney (https://survey.actionproject.eu/coney/) was partially supported by the ACTION project (grant agreement number 824603), co-funded by the European Commission under the Horizon 2020 Framework Programme."
   } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@language" : "en",
-    "@value" : "Damiano Scandolari, Cefriel"
+    "@value" : "Damiano Scandolari"
   }, {
     "@language" : "en",
-    "@value" : "Gloria Re Calegari, Cefriel"
+    "@value" : "Gloria Re Calegari"
   }, {
     "@language" : "en",
-    "@value" : "Irene Celino, Cefriel"
+    "@value" : "Irene Celino"
   }, {
     "@language" : "en",
-    "@value" : "Mario Scrocca, Cefriel"
+    "@value" : "Mario Scrocca"
   } ],
   "http://purl.org/dc/elements/1.1/rights" : [ {
     "@language" : "en",
     "@value" : "The Survey Ontology is available under the Creative Commons Attribution 3.0 Unported license; see http://creativecommons.org/licenses/by/3.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement \"This work is based on the Survey Ontology, developed by the Knowledge Technologies group at Cefriel, Milan\" and link back to https://w3id.org/so-ontology"
+  } ],
+  "http://purl.org/dc/elements/1.1/subject" : [ {
+    "@language" : "en",
+    "@value" : "Survey, Question, Answer, Variable"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
@@ -100,6 +179,12 @@
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "http://creativecommons.org/licenses/by/3.0/"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "so"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/so-ontology#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -109,22 +194,9 @@
     "@language" : "en",
     "@value" : "Survey Ontology"
   } ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://purl.org/linked-data/cube#"
-  }, {
-    "@id" : "http://purl.org/wf4ever/ro#"
-  }, {
-    "@id" : "http://purl.org/wf4ever/wfdesc#"
-  }, {
-    "@id" : "http://purl.org/wf4ever/wfprov#"
-  }, {
-    "@id" : "http://w3id.org/rv-ontology#"
-  }, {
-    "@id" : "http://www.w3.org/ns/prov#"
-  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
-    "@value" : "V 1.0, Release 2011-10-01"
+    "@value" : "V 1.0, Release 2019"
   } ],
   "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://w3id.org/so-ontology"

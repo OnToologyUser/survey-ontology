@@ -2,37 +2,31 @@
 <rdf:RDF xmlns="https://w3id.org/so-ontology#"
      xml:base="https://w3id.org/so-ontology"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:wot="http://xmlns.com/wot/0.1/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:core="http://purl.org/vocab/frbr/core#"
      xmlns:cube="http://purl.org/linked-data/cube#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:dcmi-terms="http://dublincore.org/documents/dcmi-terms/">
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/so-ontology#">
-        <owl:imports rdf:resource="http://purl.org/linked-data/cube#"/>
-        <owl:imports rdf:resource="http://purl.org/wf4ever/ro#"/>
-        <owl:imports rdf:resource="http://purl.org/wf4ever/wfdesc#"/>
-        <owl:imports rdf:resource="http://purl.org/wf4ever/wfprov#"/>
-        <owl:imports rdf:resource="http://w3id.org/rv-ontology#"/>
-        <owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
         <dc:contributor xml:lang="en">Work on the Survey Ontology and Coney (https://survey.actionproject.eu/coney/) was partially supported by the ACTION project (grant agreement number 824603), co-funded by the European Commission under the Horizon 2020 Framework Programme.</dc:contributor>
-        <dc:creator xml:lang="en">Damiano Scandolari, Cefriel</dc:creator>
-        <dc:creator xml:lang="en">Gloria Re Calegari, Cefriel</dc:creator>
-        <dc:creator xml:lang="en">Irene Celino, Cefriel</dc:creator>
-        <dc:creator xml:lang="en">Mario Scrocca, Cefriel</dc:creator>
+        <dc:creator xml:lang="en">Damiano Scandolari</dc:creator>
+        <dc:creator xml:lang="en">Gloria Re Calegari</dc:creator>
+        <dc:creator xml:lang="en">Irene Celino</dc:creator>
+        <dc:creator xml:lang="en">Mario Scrocca</dc:creator>
         <dc:rights xml:lang="en">The Survey Ontology is available under the Creative Commons Attribution 3.0 Unported license; see http://creativecommons.org/licenses/by/3.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement &quot;This work is based on the Survey Ontology, developed by the Knowledge Technologies group at Cefriel, Milan&quot; and link back to https://w3id.org/so-ontology</dc:rights>
+        <dc:subject xml:lang="en">Survey, Question, Answer, Variable</dc:subject>
         <dc:title xml:lang="en">The Survey Ontology</dc:title>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <vann:preferredNamespacePrefix>so</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/so-ontology#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">Ontology for surveys based on the Coney data model.</rdfs:comment>
         <rdfs:label xml:lang="en">Survey Ontology</rdfs:label>
-        <owl:versionInfo xml:lang="en">V 1.0, Release 2011-10-01</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">V 1.0, Release 2019</owl:versionInfo>
+        <foaf:homepage rdf:resource="https://w3id.org/so-ontology"/>
     </owl:Ontology>
     
 
@@ -49,10 +43,108 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/rights -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/linked-data/cube#component -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/linked-data/cube#component"/>
+    
+
+
+    <!-- http://purl.org/linked-data/cube#componentProperty -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/linked-data/cube#componentProperty"/>
+    
+
+
+    <!-- http://purl.org/linked-data/cube#componentRequired -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/linked-data/cube#componentRequired"/>
+    
+
+
+    <!-- http://purl.org/linked-data/cube#dimension -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/linked-data/cube#dimension"/>
+    
+
+
+    <!-- http://purl.org/linked-data/cube#measure -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/linked-data/cube#measure"/>
+    
+
+
+    <!-- http://purl.org/linked-data/cube#sliceKey -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/linked-data/cube#sliceKey"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
     
 
 
@@ -328,10 +420,101 @@
     
 
 
+    <!-- http://purl.org/linked-data/cube#ComponentSpecification -->
+
+
+    <owl:Class rdf:about="http://purl.org/linked-data/cube#ComponentSpecification"/>
+    
+
+
+    <!-- http://purl.org/linked-data/cube#DataSet -->
+
+
+    <owl:Class rdf:about="http://purl.org/linked-data/cube#DataSet"/>
+    
+
+
+    <!-- http://purl.org/linked-data/cube#DataStructureDefinition -->
+
+
+    <owl:Class rdf:about="http://purl.org/linked-data/cube#DataStructureDefinition"/>
+    
+
+
+    <!-- http://purl.org/linked-data/cube#Observation -->
+
+
+    <owl:Class rdf:about="http://purl.org/linked-data/cube#Observation"/>
+    
+
+
+    <!-- http://purl.org/linked-data/cube#Slice -->
+
+
+    <owl:Class rdf:about="http://purl.org/linked-data/cube#Slice"/>
+    
+
+
+    <!-- http://purl.org/linked-data/cube#SliceKey -->
+
+
+    <owl:Class rdf:about="http://purl.org/linked-data/cube#SliceKey"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/ro#ResearchObject -->
+
+
+    <owl:Class rdf:about="http://purl.org/wf4ever/ro#ResearchObject"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/ro#Resource -->
+
+
+    <owl:Class rdf:about="http://purl.org/wf4ever/ro#Resource"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/wfdesc#Output -->
+
+
+    <owl:Class rdf:about="http://purl.org/wf4ever/wfdesc#Output"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/wfdesc#Process -->
+
+
+    <owl:Class rdf:about="http://purl.org/wf4ever/wfdesc#Process"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/wfprov#Artifact -->
+
+
+    <owl:Class rdf:about="http://purl.org/wf4ever/wfprov#Artifact"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/wfprov#ProcessRun -->
+
+
+    <owl:Class rdf:about="http://purl.org/wf4ever/wfprov#ProcessRun"/>
+    
+
+
     <!-- http://w3id.org/rv-ontology#Variable -->
 
 
     <owl:Class rdf:about="http://w3id.org/rv-ontology#Variable"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent"/>
     
 
 
@@ -544,30 +727,6 @@
     
 
 
-    <!-- http://creativecommons.org/licenses/by/3.0/ -->
-
-
-    <owl:NamedIndividual rdf:about="http://creativecommons.org/licenses/by/3.0/"/>
-    
-
-
-    <!-- https://w3id.org/so-ontology -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/so-ontology"/>
-    
-
-
-    <!-- https://w3id.org/so-ontology# -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/so-ontology#">
-        <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <foaf:homepage rdf:resource="https://w3id.org/so-ontology"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/so-ontology#Checkbox -->
 
 
@@ -656,27 +815,27 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/so-ontology#SurveyDataStructureDefinition">
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
         <cube:component>
-            <rdf:Description rdf:nodeID="genid1">
+            <rdf:Description>
                 <cube:measure rdf:resource="https://w3id.org/so-ontology#hasAnswer"/>
             </rdf:Description>
         </cube:component>
         <cube:component>
-            <rdf:Description rdf:nodeID="genid2">
+            <rdf:Description>
                 <cube:dimension rdf:resource="https://w3id.org/so-ontology#answeredIn"/>
             </rdf:Description>
         </cube:component>
         <cube:component>
-            <rdf:Description rdf:nodeID="genid3">
+            <rdf:Description>
                 <cube:measure rdf:resource="https://w3id.org/so-ontology#hasAnswerText"/>
             </rdf:Description>
         </cube:component>
         <cube:component>
-            <rdf:Description rdf:nodeID="genid4">
+            <rdf:Description>
                 <cube:measure rdf:resource="https://w3id.org/so-ontology#hasCompletionTimestamp"/>
             </rdf:Description>
         </cube:component>
         <cube:component>
-            <rdf:Description rdf:nodeID="genid5">
+            <rdf:Description>
                 <cube:dimension rdf:resource="https://w3id.org/so-ontology#completesQuestion"/>
             </rdf:Description>
         </cube:component>
@@ -719,23 +878,23 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/so-ontology#hasCompletionTimestamp"/>
-    <rdf:Description rdf:nodeID="genid6">
+    <rdf:Description>
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#ComponentSpecification"/>
         <cube:componentRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</cube:componentRequired>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid7">
+    <rdf:Description>
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#ComponentSpecification"/>
         <cube:componentRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</cube:componentRequired>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid8">
+    <rdf:Description>
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#ComponentSpecification"/>
         <cube:componentRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</cube:componentRequired>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid9">
+    <rdf:Description>
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#ComponentSpecification"/>
         <cube:componentRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</cube:componentRequired>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid10">
+    <rdf:Description>
         <rdf:type rdf:resource="http://purl.org/linked-data/cube#ComponentSpecification"/>
         <cube:componentRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</cube:componentRequired>
     </rdf:Description>
