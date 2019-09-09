@@ -58,7 +58,6 @@
     <!-- https://w3id.org/so-ontology#answeredIn -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/so-ontology#answeredIn">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/so-ontology#CompletedQuestion"/>
         <rdfs:range rdf:resource="https://w3id.org/so-ontology#SurveyCompletion"/>
     </owl:ObjectProperty>
@@ -68,7 +67,6 @@
     <!-- https://w3id.org/so-ontology#completedFor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/so-ontology#completedFor">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/so-ontology#SurveyCompletion"/>
         <rdfs:range rdf:resource="https://w3id.org/so-ontology#SurveyTarget"/>
         <rdfs:label>completed for</rdfs:label>
@@ -79,7 +77,6 @@
     <!-- https://w3id.org/so-ontology#completesQuestion -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/so-ontology#completesQuestion">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/so-ontology#CompletedQuestion"/>
         <rdfs:range rdf:resource="https://w3id.org/so-ontology#Question"/>
     </owl:ObjectProperty>
@@ -89,7 +86,6 @@
     <!-- https://w3id.org/so-ontology#hasAnswer -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/so-ontology#hasAnswer">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/so-ontology#CompletedQuestion"/>
         <rdfs:range rdf:resource="https://w3id.org/so-ontology#Answer"/>
     </owl:ObjectProperty>
@@ -99,7 +95,6 @@
     <!-- https://w3id.org/so-ontology#hasLatentVariable -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/so-ontology#hasLatentVariable">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/so-ontology#Question"/>
         <rdfs:range rdf:resource="https://w3id.org/so-ontology#LatentVariable"/>
         <rdfs:label>has latent variable</rdfs:label>
@@ -110,7 +105,6 @@
     <!-- https://w3id.org/so-ontology#hasObservableVariable -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/so-ontology#hasObservableVariable">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/so-ontology#Question"/>
         <rdfs:range rdf:resource="https://w3id.org/so-ontology#ObservableVariable"/>
         <rdfs:label>has observable variable</rdfs:label>
@@ -121,7 +115,6 @@
     <!-- https://w3id.org/so-ontology#hasVisualization -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/so-ontology#hasVisualization">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/so-ontology#ClosedQuestion"/>
         <rdfs:range rdf:resource="https://w3id.org/so-ontology#QuestionVisualization"/>
         <rdfs:label>has visualization</rdfs:label>
@@ -132,7 +125,6 @@
     <!-- https://w3id.org/so-ontology#inSurveyProcedure -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/so-ontology#inSurveyProcedure">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/so-ontology#SurveyElement"/>
         <rdfs:range rdf:resource="https://w3id.org/so-ontology#SurveyProcedure"/>
         <rdfs:label>in survey procedure</rdfs:label>
@@ -143,7 +135,6 @@
     <!-- https://w3id.org/so-ontology#leadsTo -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/so-ontology#leadsTo">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/so-ontology#SurveyElement"/>
         <rdfs:range rdf:resource="https://w3id.org/so-ontology#SurveyElement"/>
         <rdfs:label>leads to</rdfs:label>
@@ -154,7 +145,6 @@
     <!-- https://w3id.org/so-ontology#startsWith -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/so-ontology#startsWith">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/so-ontology#SurveyProcedure"/>
         <rdfs:range rdf:resource="https://w3id.org/so-ontology#SurveyElement"/>
         <rdfs:label>starts with</rdfs:label>
