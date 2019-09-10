@@ -1,19 +1,19 @@
-<https://w3id.org/so-ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/so-ontology#> <http://purl.org/dc/elements/1.1/contributor> "Work on the Survey Ontology and Coney (https://survey.actionproject.eu/coney/) was partially supported by the ACTION project (grant agreement number 824603), co-funded by the European Commission under the Horizon 2020 Framework Programme."@en .
-<https://w3id.org/so-ontology#> <http://purl.org/dc/elements/1.1/creator> "Damiano Scandolari"@en .
-<https://w3id.org/so-ontology#> <http://purl.org/dc/elements/1.1/creator> "Gloria Re Calegari"@en .
-<https://w3id.org/so-ontology#> <http://purl.org/dc/elements/1.1/creator> "Irene Celino"@en .
-<https://w3id.org/so-ontology#> <http://purl.org/dc/elements/1.1/creator> "Mario Scrocca"@en .
-<https://w3id.org/so-ontology#> <http://purl.org/dc/elements/1.1/rights> "The Survey Ontology is available under the Creative Commons Attribution 3.0 Unported license; see http://creativecommons.org/licenses/by/3.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement \"This work is based on the Survey Ontology, developed by the Knowledge Technologies group at Cefriel, Milan\" and link back to https://w3id.org/so-ontology"@en .
-<https://w3id.org/so-ontology#> <http://purl.org/dc/elements/1.1/subject> "Survey, Question, Answer, Variable"@en .
-<https://w3id.org/so-ontology#> <http://purl.org/dc/elements/1.1/title> "The Survey Ontology"@en .
-<https://w3id.org/so-ontology#> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/3.0/> .
-<https://w3id.org/so-ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "so" .
-<https://w3id.org/so-ontology#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/so-ontology#" .
-<https://w3id.org/so-ontology#> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology for surveys based on the Coney data model."@en .
-<https://w3id.org/so-ontology#> <http://www.w3.org/2000/01/rdf-schema#label> "Survey Ontology"@en .
-<https://w3id.org/so-ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "V 1.0, Release 2019"@en .
-<https://w3id.org/so-ontology#> <http://xmlns.com/foaf/0.1/homepage> <https://w3id.org/so-ontology> .
+<https://w3id.org/survey-ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/contributor> "Work on the Survey Ontology and Coney (https://survey.actionproject.eu/coney/) was partially supported by the ACTION project (grant agreement number 824603), co-funded by the European Commission under the Horizon 2020 Framework Programme."@en .
+<https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/creator> "Damiano Scandolari"@en .
+<https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/creator> "Gloria Re Calegari"@en .
+<https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/creator> "Irene Celino"@en .
+<https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/creator> "Mario Scrocca"@en .
+<https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/rights> "The Survey Ontology is available under the Creative Commons Attribution 3.0 Unported license; see http://creativecommons.org/licenses/by/3.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement \"This work is based on the Survey Ontology, developed by the Knowledge Technologies group at Cefriel, Milan\" and link back to https://w3id.org/survey-ontology"@en .
+<https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/subject> "Survey, Question, Answer, Variable"@en .
+<https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/title> "The Survey Ontology"@en .
+<https://w3id.org/survey-ontology#> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/3.0/> .
+<https://w3id.org/survey-ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sur" .
+<https://w3id.org/survey-ontology#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/survey-ontology#" .
+<https://w3id.org/survey-ontology#> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology for surveys based on the Coney data model."@en .
+<https://w3id.org/survey-ontology#> <http://www.w3.org/2000/01/rdf-schema#label> "Survey Ontology"@en .
+<https://w3id.org/survey-ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "V 1.0, Release 2019"@en .
+<https://w3id.org/survey-ontology#> <http://xmlns.com/foaf/0.1/homepage> <https://w3id.org/survey-ontology> .
 # 
 # 
 # #################################################################
@@ -77,72 +77,62 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/so-ontology#answeredIn
-<https://w3id.org/so-ontology#answeredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/so-ontology#answeredIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://w3id.org/so-ontology#answeredIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#CompletedQuestion> .
-<https://w3id.org/so-ontology#answeredIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/so-ontology#SurveyCompletion> .
+# https://w3id.org/survey-ontology#answeredIn
+<https://w3id.org/survey-ontology#answeredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/survey-ontology#answeredIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#CompletedQuestion> .
+<https://w3id.org/survey-ontology#answeredIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#SurveyCompletion> .
 # 
-# https://w3id.org/so-ontology#completedFor
-<https://w3id.org/so-ontology#completedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/so-ontology#completedFor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://w3id.org/so-ontology#completedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#SurveyCompletion> .
-<https://w3id.org/so-ontology#completedFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/so-ontology#SurveyTarget> .
-<https://w3id.org/so-ontology#completedFor> <http://www.w3.org/2000/01/rdf-schema#label> "completed for" .
+# https://w3id.org/survey-ontology#completedFor
+<https://w3id.org/survey-ontology#completedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/survey-ontology#completedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#SurveyCompletion> .
+<https://w3id.org/survey-ontology#completedFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#SurveyTarget> .
+<https://w3id.org/survey-ontology#completedFor> <http://www.w3.org/2000/01/rdf-schema#label> "completed for" .
 # 
-# https://w3id.org/so-ontology#completesQuestion
-<https://w3id.org/so-ontology#completesQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/so-ontology#completesQuestion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://w3id.org/so-ontology#completesQuestion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#CompletedQuestion> .
-<https://w3id.org/so-ontology#completesQuestion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/so-ontology#Question> .
+# https://w3id.org/survey-ontology#completesQuestion
+<https://w3id.org/survey-ontology#completesQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/survey-ontology#completesQuestion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#CompletedQuestion> .
+<https://w3id.org/survey-ontology#completesQuestion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#Question> .
 # 
-# https://w3id.org/so-ontology#hasAnswer
-<https://w3id.org/so-ontology#hasAnswer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/so-ontology#hasAnswer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://w3id.org/so-ontology#hasAnswer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#CompletedQuestion> .
-<https://w3id.org/so-ontology#hasAnswer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/so-ontology#Answer> .
+# https://w3id.org/survey-ontology#hasAnswer
+<https://w3id.org/survey-ontology#hasAnswer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/survey-ontology#hasAnswer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#CompletedQuestion> .
+<https://w3id.org/survey-ontology#hasAnswer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#Answer> .
 # 
-# https://w3id.org/so-ontology#hasLatentVariable
-<https://w3id.org/so-ontology#hasLatentVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/so-ontology#hasLatentVariable> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://w3id.org/so-ontology#hasLatentVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#Question> .
-<https://w3id.org/so-ontology#hasLatentVariable> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/so-ontology#LatentVariable> .
-<https://w3id.org/so-ontology#hasLatentVariable> <http://www.w3.org/2000/01/rdf-schema#label> "has latent variable" .
+# https://w3id.org/survey-ontology#hasLatentVariable
+<https://w3id.org/survey-ontology#hasLatentVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/survey-ontology#hasLatentVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#Question> .
+<https://w3id.org/survey-ontology#hasLatentVariable> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#LatentVariable> .
+<https://w3id.org/survey-ontology#hasLatentVariable> <http://www.w3.org/2000/01/rdf-schema#label> "has latent variable" .
 # 
-# https://w3id.org/so-ontology#hasObservableVariable
-<https://w3id.org/so-ontology#hasObservableVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/so-ontology#hasObservableVariable> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://w3id.org/so-ontology#hasObservableVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#Question> .
-<https://w3id.org/so-ontology#hasObservableVariable> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/so-ontology#ObservableVariable> .
-<https://w3id.org/so-ontology#hasObservableVariable> <http://www.w3.org/2000/01/rdf-schema#label> "has observable variable" .
+# https://w3id.org/survey-ontology#hasObservableVariable
+<https://w3id.org/survey-ontology#hasObservableVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/survey-ontology#hasObservableVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#Question> .
+<https://w3id.org/survey-ontology#hasObservableVariable> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#ObservableVariable> .
+<https://w3id.org/survey-ontology#hasObservableVariable> <http://www.w3.org/2000/01/rdf-schema#label> "has observable variable" .
 # 
-# https://w3id.org/so-ontology#hasVisualization
-<https://w3id.org/so-ontology#hasVisualization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/so-ontology#hasVisualization> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://w3id.org/so-ontology#hasVisualization> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#ClosedQuestion> .
-<https://w3id.org/so-ontology#hasVisualization> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/so-ontology#QuestionVisualization> .
-<https://w3id.org/so-ontology#hasVisualization> <http://www.w3.org/2000/01/rdf-schema#label> "has visualization" .
+# https://w3id.org/survey-ontology#hasVisualization
+<https://w3id.org/survey-ontology#hasVisualization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/survey-ontology#hasVisualization> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#ClosedQuestion> .
+<https://w3id.org/survey-ontology#hasVisualization> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#QuestionVisualization> .
+<https://w3id.org/survey-ontology#hasVisualization> <http://www.w3.org/2000/01/rdf-schema#label> "has visualization" .
 # 
-# https://w3id.org/so-ontology#inSurveyProcedure
-<https://w3id.org/so-ontology#inSurveyProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/so-ontology#inSurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://w3id.org/so-ontology#inSurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#SurveyElement> .
-<https://w3id.org/so-ontology#inSurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/so-ontology#SurveyProcedure> .
-<https://w3id.org/so-ontology#inSurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "in survey procedure" .
+# https://w3id.org/survey-ontology#inSurveyProcedure
+<https://w3id.org/survey-ontology#inSurveyProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/survey-ontology#inSurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#SurveyElement> .
+<https://w3id.org/survey-ontology#inSurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#SurveyProcedure> .
+<https://w3id.org/survey-ontology#inSurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "in survey procedure" .
 # 
-# https://w3id.org/so-ontology#leadsTo
-<https://w3id.org/so-ontology#leadsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/so-ontology#leadsTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://w3id.org/so-ontology#leadsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#SurveyElement> .
-<https://w3id.org/so-ontology#leadsTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/so-ontology#SurveyElement> .
-<https://w3id.org/so-ontology#leadsTo> <http://www.w3.org/2000/01/rdf-schema#label> "leads to" .
+# https://w3id.org/survey-ontology#leadsTo
+<https://w3id.org/survey-ontology#leadsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/survey-ontology#leadsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#SurveyElement> .
+<https://w3id.org/survey-ontology#leadsTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#SurveyElement> .
+<https://w3id.org/survey-ontology#leadsTo> <http://www.w3.org/2000/01/rdf-schema#label> "leads to" .
 # 
-# https://w3id.org/so-ontology#startsWith
-<https://w3id.org/so-ontology#startsWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/so-ontology#startsWith> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://w3id.org/so-ontology#startsWith> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#SurveyProcedure> .
-<https://w3id.org/so-ontology#startsWith> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/so-ontology#SurveyElement> .
-<https://w3id.org/so-ontology#startsWith> <http://www.w3.org/2000/01/rdf-schema#label> "starts with" .
+# https://w3id.org/survey-ontology#startsWith
+<https://w3id.org/survey-ontology#startsWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/survey-ontology#startsWith> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#SurveyProcedure> .
+<https://w3id.org/survey-ontology#startsWith> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#SurveyElement> .
+<https://w3id.org/survey-ontology#startsWith> <http://www.w3.org/2000/01/rdf-schema#label> "starts with" .
 # 
 # 
 # 
@@ -153,69 +143,69 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/so-ontology#hasAnswerText
-<https://w3id.org/so-ontology#hasAnswerText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/so-ontology#hasAnswerText> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#CompletedQuestion> .
-<https://w3id.org/so-ontology#hasAnswerText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# https://w3id.org/survey-ontology#hasAnswerText
+<https://w3id.org/survey-ontology#hasAnswerText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/survey-ontology#hasAnswerText> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#CompletedQuestion> .
+<https://w3id.org/survey-ontology#hasAnswerText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
-# https://w3id.org/so-ontology#hasCompletionTimestamp
-<https://w3id.org/so-ontology#hasCompletionTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/so-ontology#hasCompletionTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#CompletedQuestion> .
-<https://w3id.org/so-ontology#hasCompletionTimestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# https://w3id.org/survey-ontology#hasCompletionTimestamp
+<https://w3id.org/survey-ontology#hasCompletionTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/survey-ontology#hasCompletionTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#CompletedQuestion> .
+<https://w3id.org/survey-ontology#hasCompletionTimestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 # 
-# https://w3id.org/so-ontology#hasLink
-<https://w3id.org/so-ontology#hasLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/so-ontology#hasLink> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#Talk> .
-<https://w3id.org/so-ontology#hasLink> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
-<https://w3id.org/so-ontology#hasLink> <http://www.w3.org/2000/01/rdf-schema#label> "has link" .
+# https://w3id.org/survey-ontology#hasLink
+<https://w3id.org/survey-ontology#hasLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/survey-ontology#hasLink> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#Talk> .
+<https://w3id.org/survey-ontology#hasLink> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/survey-ontology#hasLink> <http://www.w3.org/2000/01/rdf-schema#label> "has link" .
 # 
-# https://w3id.org/so-ontology#hasOrderNumber
-<https://w3id.org/so-ontology#hasOrderNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/so-ontology#hasOrderNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#ClosedAnswer> .
-<https://w3id.org/so-ontology#hasOrderNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/so-ontology#hasOrderNumber> <http://www.w3.org/2000/01/rdf-schema#label> "has order number" .
+# https://w3id.org/survey-ontology#hasOrderNumber
+<https://w3id.org/survey-ontology#hasOrderNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/survey-ontology#hasOrderNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#ClosedAnswer> .
+<https://w3id.org/survey-ontology#hasOrderNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/survey-ontology#hasOrderNumber> <http://www.w3.org/2000/01/rdf-schema#label> "has order number" .
 # 
-# https://w3id.org/so-ontology#hasPoints
-<https://w3id.org/so-ontology#hasPoints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/so-ontology#hasPoints> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#ClosedAnswer> .
-<https://w3id.org/so-ontology#hasPoints> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<https://w3id.org/so-ontology#hasPoints> <http://www.w3.org/2000/01/rdf-schema#label> "has points" .
+# https://w3id.org/survey-ontology#hasPoints
+<https://w3id.org/survey-ontology#hasPoints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/survey-ontology#hasPoints> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#ClosedAnswer> .
+<https://w3id.org/survey-ontology#hasPoints> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/survey-ontology#hasPoints> <http://www.w3.org/2000/01/rdf-schema#label> "has points" .
 # 
-# https://w3id.org/so-ontology#hasStatus
-<https://w3id.org/so-ontology#hasStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/so-ontology#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#SurveyProcedure> .
-<https://w3id.org/so-ontology#hasStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/so-ontology#hasStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has status" .
+# https://w3id.org/survey-ontology#hasStatus
+<https://w3id.org/survey-ontology#hasStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/survey-ontology#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#SurveyProcedure> .
+<https://w3id.org/survey-ontology#hasStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/survey-ontology#hasStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has status" .
 # 
-# https://w3id.org/so-ontology#hasText
-<https://w3id.org/so-ontology#hasText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/so-ontology#hasText> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#SurveyElement> .
-<https://w3id.org/so-ontology#hasText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/so-ontology#hasText> <http://www.w3.org/2000/01/rdf-schema#label> "has text" .
+# https://w3id.org/survey-ontology#hasText
+<https://w3id.org/survey-ontology#hasText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/survey-ontology#hasText> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#SurveyElement> .
+<https://w3id.org/survey-ontology#hasText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/survey-ontology#hasText> <http://www.w3.org/2000/01/rdf-schema#label> "has text" .
 # 
-# https://w3id.org/so-ontology#hasTitle
-<https://w3id.org/so-ontology#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/so-ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#SurveyProcedure> .
-<https://w3id.org/so-ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/so-ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#label> "has title" .
+# https://w3id.org/survey-ontology#hasTitle
+<https://w3id.org/survey-ontology#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/survey-ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#SurveyProcedure> .
+<https://w3id.org/survey-ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/survey-ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#label> "has title" .
 # 
-# https://w3id.org/so-ontology#hasValue
-<https://w3id.org/so-ontology#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/so-ontology#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#ClosedAnswer> .
-<https://w3id.org/so-ontology#hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<https://w3id.org/so-ontology#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value" .
+# https://w3id.org/survey-ontology#hasValue
+<https://w3id.org/survey-ontology#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/survey-ontology#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#ClosedAnswer> .
+<https://w3id.org/survey-ontology#hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/survey-ontology#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value" .
 # 
-# https://w3id.org/so-ontology#participantId
-<https://w3id.org/so-ontology#participantId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/so-ontology#participantId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#Participant> .
-<https://w3id.org/so-ontology#participantId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/so-ontology#participantId> <http://www.w3.org/2000/01/rdf-schema#label> "participant id" .
+# https://w3id.org/survey-ontology#participantId
+<https://w3id.org/survey-ontology#participantId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/survey-ontology#participantId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#Participant> .
+<https://w3id.org/survey-ontology#participantId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/survey-ontology#participantId> <http://www.w3.org/2000/01/rdf-schema#label> "participant id" .
 # 
-# https://w3id.org/so-ontology#sessionId
-<https://w3id.org/so-ontology#sessionId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/so-ontology#sessionId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/so-ontology#SurveyCompletion> .
-<https://w3id.org/so-ontology#sessionId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/so-ontology#sessionId> <http://www.w3.org/2000/01/rdf-schema#label> "session id" .
+# https://w3id.org/survey-ontology#sessionId
+<https://w3id.org/survey-ontology#sessionId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/survey-ontology#sessionId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#SurveyCompletion> .
+<https://w3id.org/survey-ontology#sessionId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/survey-ontology#sessionId> <http://www.w3.org/2000/01/rdf-schema#label> "session id" .
 # 
 # 
 # 
@@ -268,107 +258,107 @@
 # http://www.w3.org/ns/prov#Agent
 <http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://w3id.org/so-ontology#Answer
-<https://w3id.org/so-ontology#Answer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#Answer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/so-ontology#SurveyElement> .
-<https://w3id.org/so-ontology#Answer> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/so-ontology#Question> .
-<https://w3id.org/so-ontology#Answer> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/so-ontology#Talk> .
-<https://w3id.org/so-ontology#Answer> <http://www.w3.org/2000/01/rdf-schema#label> "Answer" .
+# https://w3id.org/survey-ontology#Answer
+<https://w3id.org/survey-ontology#Answer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#Answer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#SurveyElement> .
+<https://w3id.org/survey-ontology#Answer> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/survey-ontology#Question> .
+<https://w3id.org/survey-ontology#Answer> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/survey-ontology#Talk> .
+<https://w3id.org/survey-ontology#Answer> <http://www.w3.org/2000/01/rdf-schema#label> "Answer" .
 # 
-# https://w3id.org/so-ontology#ClosedAnswer
-<https://w3id.org/so-ontology#ClosedAnswer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#ClosedAnswer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/so-ontology#Answer> .
-<https://w3id.org/so-ontology#ClosedAnswer> <http://www.w3.org/2000/01/rdf-schema#label> "Closed answer" .
+# https://w3id.org/survey-ontology#ClosedAnswer
+<https://w3id.org/survey-ontology#ClosedAnswer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#ClosedAnswer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#Answer> .
+<https://w3id.org/survey-ontology#ClosedAnswer> <http://www.w3.org/2000/01/rdf-schema#label> "Closed answer" .
 # 
-# https://w3id.org/so-ontology#ClosedQuestion
-<https://w3id.org/so-ontology#ClosedQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#ClosedQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/so-ontology#Question> .
-<https://w3id.org/so-ontology#ClosedQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Closed question" .
+# https://w3id.org/survey-ontology#ClosedQuestion
+<https://w3id.org/survey-ontology#ClosedQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#ClosedQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#Question> .
+<https://w3id.org/survey-ontology#ClosedQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Closed question" .
 # 
-# https://w3id.org/so-ontology#CompletedQuestion
-<https://w3id.org/so-ontology#CompletedQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#CompletedQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linked-data/cube#Observation> .
-<https://w3id.org/so-ontology#CompletedQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/wfdesc#Output> .
-<https://w3id.org/so-ontology#CompletedQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Completed question" .
+# https://w3id.org/survey-ontology#CompletedQuestion
+<https://w3id.org/survey-ontology#CompletedQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#CompletedQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linked-data/cube#Observation> .
+<https://w3id.org/survey-ontology#CompletedQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/wfdesc#Output> .
+<https://w3id.org/survey-ontology#CompletedQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Completed question" .
 # 
-# https://w3id.org/so-ontology#CompletedSurvey
-<https://w3id.org/so-ontology#CompletedSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#CompletedSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linked-data/cube#Slice> .
-<https://w3id.org/so-ontology#CompletedSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/wfprov#Artifact> .
-<https://w3id.org/so-ontology#CompletedSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "CompletedSurvey" .
+# https://w3id.org/survey-ontology#CompletedSurvey
+<https://w3id.org/survey-ontology#CompletedSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#CompletedSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linked-data/cube#Slice> .
+<https://w3id.org/survey-ontology#CompletedSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/wfprov#Artifact> .
+<https://w3id.org/survey-ontology#CompletedSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "CompletedSurvey" .
 # 
-# https://w3id.org/so-ontology#LatentVariable
-<https://w3id.org/so-ontology#LatentVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#LatentVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rv-ontology#Variable> .
-<https://w3id.org/so-ontology#LatentVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Latent variable" .
+# https://w3id.org/survey-ontology#LatentVariable
+<https://w3id.org/survey-ontology#LatentVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#LatentVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rv-ontology#Variable> .
+<https://w3id.org/survey-ontology#LatentVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Latent variable" .
 # 
-# https://w3id.org/so-ontology#ObservableVariable
-<https://w3id.org/so-ontology#ObservableVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#ObservableVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rv-ontology#Variable> .
-<https://w3id.org/so-ontology#ObservableVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Observable variable" .
+# https://w3id.org/survey-ontology#ObservableVariable
+<https://w3id.org/survey-ontology#ObservableVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#ObservableVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rv-ontology#Variable> .
+<https://w3id.org/survey-ontology#ObservableVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Observable variable" .
 # 
-# https://w3id.org/so-ontology#OpenAnswer
-<https://w3id.org/so-ontology#OpenAnswer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#OpenAnswer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/so-ontology#Answer> .
-<https://w3id.org/so-ontology#OpenAnswer> <http://www.w3.org/2000/01/rdf-schema#label> "Open answer" .
+# https://w3id.org/survey-ontology#OpenAnswer
+<https://w3id.org/survey-ontology#OpenAnswer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#OpenAnswer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#Answer> .
+<https://w3id.org/survey-ontology#OpenAnswer> <http://www.w3.org/2000/01/rdf-schema#label> "Open answer" .
 # 
-# https://w3id.org/so-ontology#OpenQuestion
-<https://w3id.org/so-ontology#OpenQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#OpenQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/so-ontology#Question> .
-<https://w3id.org/so-ontology#OpenQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Open question" .
+# https://w3id.org/survey-ontology#OpenQuestion
+<https://w3id.org/survey-ontology#OpenQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#OpenQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#Question> .
+<https://w3id.org/survey-ontology#OpenQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Open question" .
 # 
-# https://w3id.org/so-ontology#Participant
-<https://w3id.org/so-ontology#Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
-<https://w3id.org/so-ontology#Participant> <http://www.w3.org/2000/01/rdf-schema#label> "Participant" .
+# https://w3id.org/survey-ontology#Participant
+<https://w3id.org/survey-ontology#Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<https://w3id.org/survey-ontology#Participant> <http://www.w3.org/2000/01/rdf-schema#label> "Participant" .
 # 
-# https://w3id.org/so-ontology#Question
-<https://w3id.org/so-ontology#Question> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#Question> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/so-ontology#SurveyElement> .
-<https://w3id.org/so-ontology#Question> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/so-ontology#Talk> .
-<https://w3id.org/so-ontology#Question> <http://www.w3.org/2000/01/rdf-schema#label> "Question" .
+# https://w3id.org/survey-ontology#Question
+<https://w3id.org/survey-ontology#Question> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#Question> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#SurveyElement> .
+<https://w3id.org/survey-ontology#Question> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/survey-ontology#Talk> .
+<https://w3id.org/survey-ontology#Question> <http://www.w3.org/2000/01/rdf-schema#label> "Question" .
 # 
-# https://w3id.org/so-ontology#QuestionVisualization
-<https://w3id.org/so-ontology#QuestionVisualization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#QuestionVisualization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://w3id.org/so-ontology#QuestionVisualization> <http://www.w3.org/2000/01/rdf-schema#label> "Question visualization" .
+# https://w3id.org/survey-ontology#QuestionVisualization
+<https://w3id.org/survey-ontology#QuestionVisualization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#QuestionVisualization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/survey-ontology#QuestionVisualization> <http://www.w3.org/2000/01/rdf-schema#label> "Question visualization" .
 # 
-# https://w3id.org/so-ontology#Survey
-<https://w3id.org/so-ontology#Survey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/ro#ResearchObject> .
-<https://w3id.org/so-ontology#Survey> <http://www.w3.org/2000/01/rdf-schema#label> "Survey" .
+# https://w3id.org/survey-ontology#Survey
+<https://w3id.org/survey-ontology#Survey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/ro#ResearchObject> .
+<https://w3id.org/survey-ontology#Survey> <http://www.w3.org/2000/01/rdf-schema#label> "Survey" .
 # 
-# https://w3id.org/so-ontology#SurveyCompletion
-<https://w3id.org/so-ontology#SurveyCompletion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#SurveyCompletion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/wfprov#ProcessRun> .
-<https://w3id.org/so-ontology#SurveyCompletion> <http://www.w3.org/2000/01/rdf-schema#label> "Survey completion" .
+# https://w3id.org/survey-ontology#SurveyCompletion
+<https://w3id.org/survey-ontology#SurveyCompletion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#SurveyCompletion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/wfprov#ProcessRun> .
+<https://w3id.org/survey-ontology#SurveyCompletion> <http://www.w3.org/2000/01/rdf-schema#label> "Survey completion" .
 # 
-# https://w3id.org/so-ontology#SurveyDataSet
-<https://w3id.org/so-ontology#SurveyDataSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#SurveyDataSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linked-data/cube#DataSet> .
-<https://w3id.org/so-ontology#SurveyDataSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/ro#Resource> .
-<https://w3id.org/so-ontology#SurveyDataSet> <http://www.w3.org/2000/01/rdf-schema#label> "Survey dataset" .
+# https://w3id.org/survey-ontology#SurveyDataSet
+<https://w3id.org/survey-ontology#SurveyDataSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#SurveyDataSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linked-data/cube#DataSet> .
+<https://w3id.org/survey-ontology#SurveyDataSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/ro#Resource> .
+<https://w3id.org/survey-ontology#SurveyDataSet> <http://www.w3.org/2000/01/rdf-schema#label> "Survey dataset" .
 # 
-# https://w3id.org/so-ontology#SurveyElement
-<https://w3id.org/so-ontology#SurveyElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#SurveyElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://w3id.org/so-ontology#SurveyElement> <http://www.w3.org/2000/01/rdf-schema#label> "Survey element" .
+# https://w3id.org/survey-ontology#SurveyElement
+<https://w3id.org/survey-ontology#SurveyElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#SurveyElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/survey-ontology#SurveyElement> <http://www.w3.org/2000/01/rdf-schema#label> "Survey element" .
 # 
-# https://w3id.org/so-ontology#SurveyProcedure
-<https://w3id.org/so-ontology#SurveyProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#SurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/ro#Resource> .
-<https://w3id.org/so-ontology#SurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/wfdesc#Process> .
-<https://w3id.org/so-ontology#SurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "Survey procedure" .
+# https://w3id.org/survey-ontology#SurveyProcedure
+<https://w3id.org/survey-ontology#SurveyProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#SurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/ro#Resource> .
+<https://w3id.org/survey-ontology#SurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/wfdesc#Process> .
+<https://w3id.org/survey-ontology#SurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "Survey procedure" .
 # 
-# https://w3id.org/so-ontology#SurveyTarget
-<https://w3id.org/so-ontology#SurveyTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#SurveyTarget> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://w3id.org/so-ontology#SurveyTarget> <http://www.w3.org/2000/01/rdf-schema#label> "Survey target" .
+# https://w3id.org/survey-ontology#SurveyTarget
+<https://w3id.org/survey-ontology#SurveyTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#SurveyTarget> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/survey-ontology#SurveyTarget> <http://www.w3.org/2000/01/rdf-schema#label> "Survey target" .
 # 
-# https://w3id.org/so-ontology#Talk
-<https://w3id.org/so-ontology#Talk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/so-ontology#Talk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/so-ontology#SurveyElement> .
-<https://w3id.org/so-ontology#Talk> <http://www.w3.org/2000/01/rdf-schema#label> "Talk" .
+# https://w3id.org/survey-ontology#Talk
+<https://w3id.org/survey-ontology#Talk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#Talk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#SurveyElement> .
+<https://w3id.org/survey-ontology#Talk> <http://www.w3.org/2000/01/rdf-schema#label> "Talk" .
 # 
 # 
 # 
@@ -379,79 +369,79 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/so-ontology#Checkbox
-<https://w3id.org/so-ontology#Checkbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/so-ontology#Checkbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/so-ontology#QuestionVisualization> .
-<https://w3id.org/so-ontology#Checkbox> <http://www.w3.org/2000/01/rdf-schema#label> "Checkbox" .
+# https://w3id.org/survey-ontology#Checkbox
+<https://w3id.org/survey-ontology#Checkbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/survey-ontology#Checkbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/survey-ontology#QuestionVisualization> .
+<https://w3id.org/survey-ontology#Checkbox> <http://www.w3.org/2000/01/rdf-schema#label> "Checkbox" .
 # 
-# https://w3id.org/so-ontology#Emoji
-<https://w3id.org/so-ontology#Emoji> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/so-ontology#Emoji> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/so-ontology#QuestionVisualization> .
-<https://w3id.org/so-ontology#Emoji> <http://www.w3.org/2000/01/rdf-schema#label> "Emoji" .
+# https://w3id.org/survey-ontology#Emoji
+<https://w3id.org/survey-ontology#Emoji> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/survey-ontology#Emoji> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/survey-ontology#QuestionVisualization> .
+<https://w3id.org/survey-ontology#Emoji> <http://www.w3.org/2000/01/rdf-schema#label> "Emoji" .
 # 
-# https://w3id.org/so-ontology#Option
-<https://w3id.org/so-ontology#Option> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/so-ontology#Option> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/so-ontology#QuestionVisualization> .
-<https://w3id.org/so-ontology#Option> <http://www.w3.org/2000/01/rdf-schema#label> "Option" .
+# https://w3id.org/survey-ontology#Option
+<https://w3id.org/survey-ontology#Option> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/survey-ontology#Option> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/survey-ontology#QuestionVisualization> .
+<https://w3id.org/survey-ontology#Option> <http://www.w3.org/2000/01/rdf-schema#label> "Option" .
 # 
-# https://w3id.org/so-ontology#Scale
-<https://w3id.org/so-ontology#Scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/so-ontology#Scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/so-ontology#QuestionVisualization> .
-<https://w3id.org/so-ontology#Scale> <http://www.w3.org/2000/01/rdf-schema#label> "Scale" .
+# https://w3id.org/survey-ontology#Scale
+<https://w3id.org/survey-ontology#Scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/survey-ontology#Scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/survey-ontology#QuestionVisualization> .
+<https://w3id.org/survey-ontology#Scale> <http://www.w3.org/2000/01/rdf-schema#label> "Scale" .
 # 
-# https://w3id.org/so-ontology#Select
-<https://w3id.org/so-ontology#Select> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/so-ontology#Select> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/so-ontology#QuestionVisualization> .
-<https://w3id.org/so-ontology#Select> <http://www.w3.org/2000/01/rdf-schema#label> "Select" .
+# https://w3id.org/survey-ontology#Select
+<https://w3id.org/survey-ontology#Select> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/survey-ontology#Select> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/survey-ontology#QuestionVisualization> .
+<https://w3id.org/survey-ontology#Select> <http://www.w3.org/2000/01/rdf-schema#label> "Select" .
 # 
-# https://w3id.org/so-ontology#SliceByQuestion
-<https://w3id.org/so-ontology#SliceByQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/so-ontology#SliceByQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#SliceKey> .
-<https://w3id.org/so-ontology#SliceByQuestion> <http://purl.org/linked-data/cube#componentProperty> <https://w3id.org/so-ontology#completesQuestion> .
-<https://w3id.org/so-ontology#SliceByQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Slice by question" .
+# https://w3id.org/survey-ontology#SliceByQuestion
+<https://w3id.org/survey-ontology#SliceByQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/survey-ontology#SliceByQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#SliceKey> .
+<https://w3id.org/survey-ontology#SliceByQuestion> <http://purl.org/linked-data/cube#componentProperty> <https://w3id.org/survey-ontology#completesQuestion> .
+<https://w3id.org/survey-ontology#SliceByQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Slice by question" .
 # 
-# https://w3id.org/so-ontology#SliceBySession
-<https://w3id.org/so-ontology#SliceBySession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/so-ontology#SliceBySession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#SliceKey> .
-<https://w3id.org/so-ontology#SliceBySession> <http://purl.org/linked-data/cube#componentProperty> <https://w3id.org/so-ontology#answeredIn> .
-<https://w3id.org/so-ontology#SliceBySession> <http://www.w3.org/2000/01/rdf-schema#label> "Slice by session" .
+# https://w3id.org/survey-ontology#SliceBySession
+<https://w3id.org/survey-ontology#SliceBySession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/survey-ontology#SliceBySession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#SliceKey> .
+<https://w3id.org/survey-ontology#SliceBySession> <http://purl.org/linked-data/cube#componentProperty> <https://w3id.org/survey-ontology#answeredIn> .
+<https://w3id.org/survey-ontology#SliceBySession> <http://www.w3.org/2000/01/rdf-schema#label> "Slice by session" .
 # 
-# https://w3id.org/so-ontology#Slider
-<https://w3id.org/so-ontology#Slider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/so-ontology#Slider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/so-ontology#QuestionVisualization> .
-<https://w3id.org/so-ontology#Slider> <http://www.w3.org/2000/01/rdf-schema#label> "Slider" .
+# https://w3id.org/survey-ontology#Slider
+<https://w3id.org/survey-ontology#Slider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/survey-ontology#Slider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/survey-ontology#QuestionVisualization> .
+<https://w3id.org/survey-ontology#Slider> <http://www.w3.org/2000/01/rdf-schema#label> "Slider" .
 # 
-# https://w3id.org/so-ontology#SurveyDataStructureDefinition
-<https://w3id.org/so-ontology#SurveyDataStructureDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/so-ontology#SurveyDataStructureDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataStructureDefinition> .
-<https://w3id.org/so-ontology#SurveyDataStructureDefinition> <http://purl.org/linked-data/cube#component> _:genid1 .
-_:genid1 <http://purl.org/linked-data/cube#measure> <https://w3id.org/so-ontology#hasAnswer> .
-<https://w3id.org/so-ontology#SurveyDataStructureDefinition> <http://purl.org/linked-data/cube#component> _:genid2 .
-_:genid2 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/so-ontology#answeredIn> .
-<https://w3id.org/so-ontology#SurveyDataStructureDefinition> <http://purl.org/linked-data/cube#component> _:genid3 .
-_:genid3 <http://purl.org/linked-data/cube#measure> <https://w3id.org/so-ontology#hasAnswerText> .
-<https://w3id.org/so-ontology#SurveyDataStructureDefinition> <http://purl.org/linked-data/cube#component> _:genid4 .
-_:genid4 <http://purl.org/linked-data/cube#measure> <https://w3id.org/so-ontology#hasCompletionTimestamp> .
-<https://w3id.org/so-ontology#SurveyDataStructureDefinition> <http://purl.org/linked-data/cube#component> _:genid5 .
-_:genid5 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/so-ontology#completesQuestion> .
-<https://w3id.org/so-ontology#SurveyDataStructureDefinition> <http://purl.org/linked-data/cube#sliceKey> <https://w3id.org/so-ontology#SliceByQuestion> .
-<https://w3id.org/so-ontology#SurveyDataStructureDefinition> <http://purl.org/linked-data/cube#sliceKey> <https://w3id.org/so-ontology#SliceBySession> .
-<https://w3id.org/so-ontology#SurveyDataStructureDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Survey data structure definition" .
+# https://w3id.org/survey-ontology#SurveyDataStructureDefinition
+<https://w3id.org/survey-ontology#SurveyDataStructureDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/survey-ontology#SurveyDataStructureDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataStructureDefinition> .
+<https://w3id.org/survey-ontology#SurveyDataStructureDefinition> <http://purl.org/linked-data/cube#component> _:genid1 .
+_:genid1 <http://purl.org/linked-data/cube#measure> <https://w3id.org/survey-ontology#hasAnswer> .
+<https://w3id.org/survey-ontology#SurveyDataStructureDefinition> <http://purl.org/linked-data/cube#component> _:genid2 .
+_:genid2 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/survey-ontology#answeredIn> .
+<https://w3id.org/survey-ontology#SurveyDataStructureDefinition> <http://purl.org/linked-data/cube#component> _:genid3 .
+_:genid3 <http://purl.org/linked-data/cube#measure> <https://w3id.org/survey-ontology#hasAnswerText> .
+<https://w3id.org/survey-ontology#SurveyDataStructureDefinition> <http://purl.org/linked-data/cube#component> _:genid4 .
+_:genid4 <http://purl.org/linked-data/cube#measure> <https://w3id.org/survey-ontology#hasCompletionTimestamp> .
+<https://w3id.org/survey-ontology#SurveyDataStructureDefinition> <http://purl.org/linked-data/cube#component> _:genid5 .
+_:genid5 <http://purl.org/linked-data/cube#dimension> <https://w3id.org/survey-ontology#completesQuestion> .
+<https://w3id.org/survey-ontology#SurveyDataStructureDefinition> <http://purl.org/linked-data/cube#sliceKey> <https://w3id.org/survey-ontology#SliceByQuestion> .
+<https://w3id.org/survey-ontology#SurveyDataStructureDefinition> <http://purl.org/linked-data/cube#sliceKey> <https://w3id.org/survey-ontology#SliceBySession> .
+<https://w3id.org/survey-ontology#SurveyDataStructureDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Survey data structure definition" .
 # 
-# https://w3id.org/so-ontology#answeredIn
-<https://w3id.org/so-ontology#answeredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# https://w3id.org/survey-ontology#answeredIn
+<https://w3id.org/survey-ontology#answeredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
-# https://w3id.org/so-ontology#completesQuestion
-<https://w3id.org/so-ontology#completesQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# https://w3id.org/survey-ontology#completesQuestion
+<https://w3id.org/survey-ontology#completesQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
-# https://w3id.org/so-ontology#hasAnswer
-<https://w3id.org/so-ontology#hasAnswer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# https://w3id.org/survey-ontology#hasAnswer
+<https://w3id.org/survey-ontology#hasAnswer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
-# https://w3id.org/so-ontology#hasAnswerText
-<https://w3id.org/so-ontology#hasAnswerText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# https://w3id.org/survey-ontology#hasAnswerText
+<https://w3id.org/survey-ontology#hasAnswerText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
-# https://w3id.org/so-ontology#hasCompletionTimestamp
-<https://w3id.org/so-ontology#hasCompletionTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# https://w3id.org/survey-ontology#hasCompletionTimestamp
+<https://w3id.org/survey-ontology#hasCompletionTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#ComponentSpecification> .
 _:genid6 <http://purl.org/linked-data/cube#componentRequired> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -472,14 +462,14 @@ _:genid10 <http://purl.org/linked-data/cube#componentRequired> "true"^^<http://w
 # #################################################################
 # 
 # 
-<https://w3id.org/so-ontology#answeredIn> <http://www.w3.org/2000/01/rdf-schema#label> "answered in" .
+<https://w3id.org/survey-ontology#answeredIn> <http://www.w3.org/2000/01/rdf-schema#label> "answered in" .
 # 
-<https://w3id.org/so-ontology#completesQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "completes question" .
+<https://w3id.org/survey-ontology#completesQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "completes question" .
 # 
-<https://w3id.org/so-ontology#hasAnswer> <http://www.w3.org/2000/01/rdf-schema#label> "has answer" .
+<https://w3id.org/survey-ontology#hasAnswer> <http://www.w3.org/2000/01/rdf-schema#label> "has answer" .
 # 
-<https://w3id.org/so-ontology#hasAnswerText> <http://www.w3.org/2000/01/rdf-schema#label> "has answer text" .
+<https://w3id.org/survey-ontology#hasAnswerText> <http://www.w3.org/2000/01/rdf-schema#label> "has answer text" .
 # 
-<https://w3id.org/so-ontology#hasCompletionTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "has completion timestamp" .
+<https://w3id.org/survey-ontology#hasCompletionTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "has completion timestamp" .
 # 
 # Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

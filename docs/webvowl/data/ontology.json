@@ -2,13 +2,13 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/so-ontology", "http://purl.org/wf4ever/ro", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://purl.org/wf4ever/wfdesc", "http://w3id.org/rv-ontology", "http://www.w3.org/2001/XMLSchema", "http://purl.org/linked-data/cube", "http://purl.org/wf4ever/wfprov" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/wf4ever/ro", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://purl.org/wf4ever/wfdesc", "http://w3id.org/rv-ontology", "http://www.w3.org/2001/XMLSchema", "http://purl.org/linked-data/cube", "http://purl.org/wf4ever/wfprov", "https://w3id.org/survey-ontology" ],
     "title" : {
       "en" : "The Survey Ontology"
     },
-    "iri" : "https://w3id.org/so-ontology#",
+    "iri" : "https://w3id.org/survey-ontology#",
     "version" : "V 1.0, Release 2019",
-    "author" : [ "Gloria Re Calegari", "Irene Celino", "Damiano Scandolari", "Mario Scrocca" ],
+    "author" : [ "Gloria Re Calegari", "Irene Celino", "Mario Scrocca", "Damiano Scandolari" ],
     "labels" : {
       "en" : "Survey Ontology"
     },
@@ -35,12 +35,12 @@
       }, {
         "identifier" : "creator",
         "language" : "en",
-        "value" : "Damiano Scandolari",
+        "value" : "Mario Scrocca",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "en",
-        "value" : "Mario Scrocca",
+        "value" : "Damiano Scandolari",
         "type" : "label"
       } ],
       "contributor" : [ {
@@ -58,25 +58,25 @@
       "rights" : [ {
         "identifier" : "rights",
         "language" : "en",
-        "value" : "The Survey Ontology is available under the Creative Commons Attribution 3.0 Unported license; see http://creativecommons.org/licenses/by/3.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement \"This work is based on the Survey Ontology, developed by the Knowledge Technologies group at Cefriel, Milan\" and link back to https://w3id.org/so-ontology",
+        "value" : "The Survey Ontology is available under the Creative Commons Attribution 3.0 Unported license; see http://creativecommons.org/licenses/by/3.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement \"This work is based on the Survey Ontology, developed by the Knowledge Technologies group at Cefriel, Milan\" and link back to https://w3id.org/survey-ontology",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
         "identifier" : "preferredNamespacePrefix",
         "language" : "undefined",
-        "value" : "so",
-        "type" : "label"
-      } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "https://w3id.org/so-ontology#",
+        "value" : "sur",
         "type" : "label"
       } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "en",
         "value" : "V 1.0, Release 2019",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/survey-ontology#",
         "type" : "label"
       } ],
       "title" : [ {
@@ -88,7 +88,7 @@
       "homepage" : [ {
         "identifier" : "homepage",
         "language" : "undefined",
-        "value" : "https://w3id.org/so-ontology",
+        "value" : "https://w3id.org/survey-ontology",
         "type" : "iri"
       } ]
     }
@@ -98,136 +98,133 @@
     "id" : "0",
     "type" : "owl:Class"
   }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
     "id" : "5",
     "type" : "owl:Class"
   }, {
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
+    "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "43",
+    "id" : "6",
     "type" : "owl:Class"
-  }, {
-    "id" : "38",
-    "type" : "owl:Class"
-  }, {
-    "id" : "26",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "11",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "24",
-    "type" : "owl:Class"
-  }, {
-    "id" : "55",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "63",
-    "type" : "rdfs:Datatype"
   }, {
     "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
-    "type" : "rdfs:Datatype"
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
   }, {
     "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
     "type" : "owl:Class"
   }, {
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "61",
+    "id" : "36",
     "type" : "owl:Class"
   }, {
-    "id" : "57",
-    "type" : "owl:Class"
-  }, {
-    "id" : "59",
-    "type" : "owl:Class"
-  }, {
-    "id" : "41",
-    "type" : "owl:Class"
-  }, {
-    "id" : "66",
-    "type" : "owl:Class"
-  }, {
-    "id" : "69",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
-    "type" : "owl:Class"
+    "id" : "56",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "44",
     "type" : "owl:Class"
   }, {
-    "id" : "53",
+    "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
     "type" : "owl:Class"
   }, {
-    "id" : "15",
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
     "type" : "owl:Class"
   }, {
     "id" : "64",
     "type" : "owl:Class"
   }, {
-    "id" : "46",
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "69",
     "type" : "owl:Class"
   }, {
     "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
     "type" : "owl:Class"
   }, {
     "id" : "81",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "23",
     "type" : "owl:Class"
   }, {
-    "id" : "79",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "8",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "68",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "82",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "71",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "65",
+    "id" : "84",
     "type" : "owl:Class"
   }, {
-    "id" : "83",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "3",
-    "type" : "owl:Class"
-  }, {
-    "id" : "76",
-    "type" : "owl:Class"
-  }, {
-    "id" : "52",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "89",
+    "id" : "73",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -241,87 +238,85 @@
     "attributes" : [ "external" ],
     "id" : "0"
   }, {
-    "iri" : "https://w3id.org/so-ontology#QuestionVisualization",
-    "baseIri" : "https://w3id.org/so-ontology",
+    "iri" : "https://w3id.org/survey-ontology#CompletedQuestion",
+    "baseIri" : "https://w3id.org/survey-ontology",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "QuestionVisualization",
-      "undefined" : "Question visualization"
+      "IRI-based" : "CompletedQuestion",
+      "undefined" : "Completed question"
     },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/so-ontology#Option",
-      "baseIri" : "https://w3id.org/so-ontology",
-      "labels" : {
-        "IRI-based" : "Option",
-        "undefined" : "Option"
-      }
-    }, {
-      "iri" : "https://w3id.org/so-ontology#Select",
-      "baseIri" : "https://w3id.org/so-ontology",
-      "labels" : {
-        "IRI-based" : "Select",
-        "undefined" : "Select"
-      }
-    }, {
-      "iri" : "https://w3id.org/so-ontology#Slider",
-      "baseIri" : "https://w3id.org/so-ontology",
-      "labels" : {
-        "IRI-based" : "Slider",
-        "undefined" : "Slider"
-      }
-    }, {
-      "iri" : "https://w3id.org/so-ontology#Emoji",
-      "baseIri" : "https://w3id.org/so-ontology",
-      "labels" : {
-        "IRI-based" : "Emoji",
-        "undefined" : "Emoji"
-      }
-    }, {
-      "iri" : "https://w3id.org/so-ontology#Checkbox",
-      "baseIri" : "https://w3id.org/so-ontology",
-      "labels" : {
-        "IRI-based" : "Checkbox",
-        "undefined" : "Checkbox"
-      }
-    }, {
-      "iri" : "https://w3id.org/so-ontology#Scale",
-      "baseIri" : "https://w3id.org/so-ontology",
-      "labels" : {
-        "IRI-based" : "Scale",
-        "undefined" : "Scale"
-      }
-    } ],
-    "id" : "5"
+    "id" : "1",
+    "superClasses" : [ "0", "2" ]
   }, {
-    "iri" : "https://w3id.org/so-ontology#Survey",
-    "baseIri" : "https://w3id.org/so-ontology",
+    "iri" : "https://w3id.org/survey-ontology#SurveyCompletion",
+    "baseIri" : "https://w3id.org/survey-ontology",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Survey",
-      "undefined" : "Survey"
+      "IRI-based" : "SurveyCompletion",
+      "undefined" : "Survey completion"
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#ObservableVariable",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObservableVariable",
+      "undefined" : "Observable variable"
+    },
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#LatentVariable",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LatentVariable",
+      "undefined" : "Latent variable"
     },
     "id" : "12",
-    "superClasses" : [ "13" ]
+    "superClasses" : [ "6" ]
   }, {
-    "iri" : "https://w3id.org/so-ontology#OpenAnswer",
-    "baseIri" : "https://w3id.org/so-ontology",
+    "iri" : "https://w3id.org/survey-ontology#SurveyDataSet",
+    "baseIri" : "https://w3id.org/survey-ontology",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "OpenAnswer",
-      "undefined" : "Open answer"
+      "IRI-based" : "SurveyDataSet",
+      "undefined" : "Survey dataset"
     },
-    "id" : "14",
-    "superClasses" : [ "15" ]
+    "id" : "13",
+    "superClasses" : [ "14", "15" ]
   }, {
-    "iri" : "https://w3id.org/so-ontology#SurveyElement",
-    "baseIri" : "https://w3id.org/so-ontology",
+    "iri" : "http://w3id.org/rv-ontology#Variable",
+    "baseIri" : "http://w3id.org/rv-ontology",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "SurveyElement",
-      "undefined" : "Survey element"
+      "IRI-based" : "Variable"
     },
-    "subClasses" : [ "7", "44", "15" ],
-    "id" : "43"
+    "subClasses" : [ "5", "12" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#ClosedQuestion",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClosedQuestion",
+      "undefined" : "Closed question"
+    },
+    "id" : "21",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#Participant",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Participant",
+      "undefined" : "Participant"
+    },
+    "id" : "23",
+    "superClasses" : [ "24" ]
   }, {
     "iri" : "http://purl.org/wf4ever/wfdesc#Output",
     "baseIri" : "http://purl.org/wf4ever/wfdesc",
@@ -331,21 +326,117 @@
     },
     "subClasses" : [ "1" ],
     "attributes" : [ "external" ],
-    "id" : "38"
+    "id" : "2"
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "26",
+    "iri" : "https://w3id.org/survey-ontology#SurveyProcedure",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "instances" : 0,
     "label" : {
-      "undefined" : "Thing"
-    }
+      "IRI-based" : "SurveyProcedure",
+      "undefined" : "Survey procedure"
+    },
+    "id" : "17",
+    "superClasses" : [ "14", "39" ]
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#ClosedAnswer",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClosedAnswer",
+      "undefined" : "Closed answer"
+    },
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#Question",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Question",
+      "undefined" : "Question"
+    },
+    "subClasses" : [ "21", "49" ],
+    "id" : "22",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://purl.org/wf4ever/wfprov#ProcessRun",
+    "baseIri" : "http://purl.org/wf4ever/wfprov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProcessRun"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#Slice",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Slice"
+    },
+    "subClasses" : [ "35" ],
+    "attributes" : [ "external" ],
+    "id" : "36"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "11",
+    "id" : "56",
     "label" : {
       "IRI-based" : "string"
     }
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#QuestionVisualization",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QuestionVisualization",
+      "undefined" : "Question visualization"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/survey-ontology#Scale",
+      "baseIri" : "https://w3id.org/survey-ontology",
+      "labels" : {
+        "IRI-based" : "Scale",
+        "undefined" : "Scale"
+      }
+    }, {
+      "iri" : "https://w3id.org/survey-ontology#Slider",
+      "baseIri" : "https://w3id.org/survey-ontology",
+      "labels" : {
+        "IRI-based" : "Slider",
+        "undefined" : "Slider"
+      }
+    }, {
+      "iri" : "https://w3id.org/survey-ontology#Select",
+      "baseIri" : "https://w3id.org/survey-ontology",
+      "labels" : {
+        "IRI-based" : "Select",
+        "undefined" : "Select"
+      }
+    }, {
+      "iri" : "https://w3id.org/survey-ontology#Checkbox",
+      "baseIri" : "https://w3id.org/survey-ontology",
+      "labels" : {
+        "IRI-based" : "Checkbox",
+        "undefined" : "Checkbox"
+      }
+    }, {
+      "iri" : "https://w3id.org/survey-ontology#Emoji",
+      "baseIri" : "https://w3id.org/survey-ontology",
+      "labels" : {
+        "IRI-based" : "Emoji",
+        "undefined" : "Emoji"
+      }
+    }, {
+      "iri" : "https://w3id.org/survey-ontology#Option",
+      "baseIri" : "https://w3id.org/survey-ontology",
+      "labels" : {
+        "IRI-based" : "Option",
+        "undefined" : "Option"
+      }
+    } ],
+    "id" : "44"
   }, {
     "iri" : "http://www.w3.org/ns/prov#Agent",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -359,14 +450,14 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "55",
+    "id" : "61",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "63",
+    "id" : "62",
     "label" : {
       "IRI-based" : "string"
     }
@@ -377,26 +468,36 @@
     "label" : {
       "IRI-based" : "Process"
     },
-    "subClasses" : [ "20" ],
+    "subClasses" : [ "17" ],
     "attributes" : [ "external" ],
-    "id" : "21"
+    "id" : "39"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "18",
+    "id" : "46",
     "label" : {
       "IRI-based" : "float"
     }
   }, {
-    "iri" : "https://w3id.org/so-ontology#ClosedAnswer",
-    "baseIri" : "https://w3id.org/so-ontology",
+    "iri" : "https://w3id.org/survey-ontology#SurveyElement",
+    "baseIri" : "https://w3id.org/survey-ontology",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "ClosedAnswer",
-      "undefined" : "Closed answer"
+      "IRI-based" : "SurveyElement",
+      "undefined" : "Survey element"
     },
-    "id" : "17",
-    "superClasses" : [ "15" ]
+    "subClasses" : [ "22", "29", "9" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#OpenAnswer",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OpenAnswer",
+      "undefined" : "Open answer"
+    },
+    "id" : "26",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://purl.org/wf4ever/ro#Resource",
     "baseIri" : "http://purl.org/wf4ever/ro",
@@ -404,49 +505,138 @@
     "label" : {
       "IRI-based" : "Resource"
     },
-    "subClasses" : [ "3", "20" ],
+    "subClasses" : [ "13", "17" ],
     "attributes" : [ "external" ],
-    "id" : "4"
+    "id" : "14"
   }, {
-    "iri" : "https://w3id.org/so-ontology#ClosedQuestion",
-    "baseIri" : "https://w3id.org/so-ontology",
+    "iri" : "https://w3id.org/survey-ontology#SurveyTarget",
+    "baseIri" : "https://w3id.org/survey-ontology",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "ClosedQuestion",
-      "undefined" : "Closed question"
+      "IRI-based" : "SurveyTarget",
+      "undefined" : "Survey target"
     },
-    "id" : "61",
-    "superClasses" : [ "44" ]
+    "id" : "64"
   }, {
-    "iri" : "https://w3id.org/so-ontology#OpenQuestion",
-    "baseIri" : "https://w3id.org/so-ontology",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#Answer",
+    "baseIri" : "https://w3id.org/survey-ontology",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "OpenQuestion",
-      "undefined" : "Open question"
+      "IRI-based" : "Answer",
+      "undefined" : "Answer"
     },
-    "id" : "57",
-    "superClasses" : [ "44" ]
+    "subClasses" : [ "26", "8" ],
+    "id" : "9",
+    "superClasses" : [ "11" ]
   }, {
-    "iri" : "https://w3id.org/so-ontology#LatentVariable",
-    "baseIri" : "https://w3id.org/so-ontology",
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.org/wf4ever/wfprov#Artifact",
+    "baseIri" : "http://purl.org/wf4ever/wfprov",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "LatentVariable",
-      "undefined" : "Latent variable"
+      "IRI-based" : "Artifact"
     },
-    "id" : "59",
-    "superClasses" : [ "53" ]
+    "subClasses" : [ "35" ],
+    "attributes" : [ "external" ],
+    "id" : "69"
   }, {
-    "iri" : "https://w3id.org/so-ontology#CompletedSurvey",
-    "baseIri" : "https://w3id.org/so-ontology",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#Talk",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Talk",
+      "undefined" : "Talk"
+    },
+    "id" : "29",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#CompletedSurvey",
+    "baseIri" : "https://w3id.org/survey-ontology",
     "instances" : 0,
     "label" : {
       "IRI-based" : "CompletedSurvey",
       "undefined" : "CompletedSurvey"
     },
-    "id" : "41",
-    "superClasses" : [ "42", "65" ]
+    "id" : "35",
+    "superClasses" : [ "36", "69" ]
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#Survey",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Survey",
+      "undefined" : "Survey"
+    },
+    "id" : "72",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "http://purl.org/linked-data/cube#DataSet",
+    "baseIri" : "http://purl.org/linked-data/cube",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataSet"
+    },
+    "subClasses" : [ "13" ],
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#OpenQuestion",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OpenQuestion",
+      "undefined" : "Open question"
+    },
+    "id" : "49",
+    "superClasses" : [ "22" ]
   }, {
     "iri" : "http://purl.org/linked-data/cube#DataStructureDefinition",
     "baseIri" : "http://purl.org/linked-data/cube",
@@ -455,10 +645,15 @@
       "IRI-based" : "DataStructureDefinition"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/so-ontology#SurveyDataStructureDefinition",
-      "baseIri" : "https://w3id.org/so-ontology",
+      "iri" : "https://w3id.org/survey-ontology#SurveyDataStructureDefinition",
+      "baseIri" : "https://w3id.org/survey-ontology",
       "annotations" : {
         "component" : [ {
+          "identifier" : "component",
+          "language" : "undefined",
+          "value" : "_:genid2147483665",
+          "type" : "label"
+        }, {
           "identifier" : "component",
           "language" : "undefined",
           "value" : "_:genid2147483664",
@@ -471,28 +666,23 @@
         }, {
           "identifier" : "component",
           "language" : "undefined",
-          "value" : "_:genid2147483667",
-          "type" : "label"
-        }, {
-          "identifier" : "component",
-          "language" : "undefined",
-          "value" : "_:genid2147483665",
-          "type" : "label"
-        }, {
-          "identifier" : "component",
-          "language" : "undefined",
           "value" : "_:genid2147483668",
+          "type" : "label"
+        }, {
+          "identifier" : "component",
+          "language" : "undefined",
+          "value" : "_:genid2147483667",
           "type" : "label"
         } ],
         "sliceKey" : [ {
           "identifier" : "sliceKey",
           "language" : "undefined",
-          "value" : "https://w3id.org/so-ontology#SliceByQuestion",
+          "value" : "https://w3id.org/survey-ontology#SliceBySession",
           "type" : "iri"
         }, {
           "identifier" : "sliceKey",
           "language" : "undefined",
-          "value" : "https://w3id.org/so-ontology#SliceBySession",
+          "value" : "https://w3id.org/survey-ontology#SliceByQuestion",
           "type" : "iri"
         } ]
       },
@@ -502,7 +692,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "66"
+    "id" : "78"
   }, {
     "iri" : "http://purl.org/linked-data/cube#ComponentSpecification",
     "baseIri" : "http://purl.org/linked-data/cube",
@@ -511,217 +701,7 @@
       "IRI-based" : "ComponentSpecification"
     },
     "attributes" : [ "external" ],
-    "id" : "69"
-  }, {
-    "iri" : "http://purl.org/wf4ever/ro#ResearchObject",
-    "baseIri" : "http://purl.org/wf4ever/ro",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ResearchObject"
-    },
-    "subClasses" : [ "12" ],
-    "attributes" : [ "external" ],
-    "id" : "13"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#Talk",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Talk",
-      "undefined" : "Talk"
-    },
-    "id" : "7",
-    "superClasses" : [ "43" ]
-  }, {
-    "iri" : "https://w3id.org/so-ontology#Question",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Question",
-      "undefined" : "Question"
-    },
-    "subClasses" : [ "61", "57" ],
-    "id" : "44",
-    "superClasses" : [ "43" ]
-  }, {
-    "iri" : "http://w3id.org/rv-ontology#Variable",
-    "baseIri" : "http://w3id.org/rv-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Variable"
-    },
-    "subClasses" : [ "52", "59" ],
-    "attributes" : [ "external" ],
-    "id" : "53"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#SurveyProcedure",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SurveyProcedure",
-      "undefined" : "Survey procedure"
-    },
-    "id" : "20",
-    "superClasses" : [ "4", "21" ]
-  }, {
-    "iri" : "https://w3id.org/so-ontology#Answer",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Answer",
-      "undefined" : "Answer"
-    },
-    "subClasses" : [ "17", "14" ],
-    "id" : "15",
-    "superClasses" : [ "43" ]
-  }, {
-    "iri" : "https://w3id.org/so-ontology#SurveyTarget",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SurveyTarget",
-      "undefined" : "Survey target"
-    },
-    "id" : "64"
-  }, {
-    "iri" : "http://purl.org/wf4ever/wfprov#ProcessRun",
-    "baseIri" : "http://purl.org/wf4ever/wfprov",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ProcessRun"
-    },
-    "subClasses" : [ "10" ],
-    "attributes" : [ "external" ],
-    "id" : "46"
-  }, {
-    "iri" : "http://purl.org/linked-data/cube#Slice",
-    "baseIri" : "http://purl.org/linked-data/cube",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Slice"
-    },
-    "subClasses" : [ "41" ],
-    "attributes" : [ "external" ],
-    "id" : "42"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "81",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "https://w3id.org/so-ontology#Participant",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Participant",
-      "undefined" : "Participant"
-    },
-    "id" : "23",
-    "superClasses" : [ "24" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "79",
-    "label" : {
-      "IRI-based" : "dateTime"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "8",
-    "label" : {
-      "IRI-based" : "anyURI"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "68",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#float",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "82",
-    "label" : {
-      "IRI-based" : "float"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "71",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://purl.org/wf4ever/wfprov#Artifact",
-    "baseIri" : "http://purl.org/wf4ever/wfprov",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Artifact"
-    },
-    "subClasses" : [ "41" ],
-    "attributes" : [ "external" ],
-    "id" : "65"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "83",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "https://w3id.org/so-ontology#SurveyDataSet",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SurveyDataSet",
-      "undefined" : "Survey dataset"
-    },
-    "id" : "3",
-    "superClasses" : [ "4", "76" ]
-  }, {
-    "iri" : "http://purl.org/linked-data/cube#DataSet",
-    "baseIri" : "http://purl.org/linked-data/cube",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DataSet"
-    },
-    "subClasses" : [ "3" ],
-    "attributes" : [ "external" ],
-    "id" : "76"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#ObservableVariable",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ObservableVariable",
-      "undefined" : "Observable variable"
-    },
-    "id" : "52",
-    "superClasses" : [ "53" ]
-  }, {
-    "iri" : "https://w3id.org/so-ontology#CompletedQuestion",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "CompletedQuestion",
-      "undefined" : "Completed question"
-    },
-    "id" : "1",
-    "superClasses" : [ "0", "38" ]
-  }, {
-    "iri" : "https://w3id.org/so-ontology#SurveyCompletion",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SurveyCompletion",
-      "undefined" : "Survey completion"
-    },
-    "id" : "10",
-    "superClasses" : [ "46" ]
+    "id" : "81"
   }, {
     "iri" : "http://purl.org/linked-data/cube#SliceKey",
     "baseIri" : "http://purl.org/linked-data/cube",
@@ -730,28 +710,13 @@
       "IRI-based" : "SliceKey"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/so-ontology#SliceByQuestion",
-      "baseIri" : "https://w3id.org/so-ontology",
+      "iri" : "https://w3id.org/survey-ontology#SliceBySession",
+      "baseIri" : "https://w3id.org/survey-ontology",
       "annotations" : {
         "componentProperty" : [ {
           "identifier" : "componentProperty",
           "language" : "undefined",
-          "value" : "https://w3id.org/so-ontology#completesQuestion",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "SliceByQuestion",
-        "undefined" : "Slice by question"
-      }
-    }, {
-      "iri" : "https://w3id.org/so-ontology#SliceBySession",
-      "baseIri" : "https://w3id.org/so-ontology",
-      "annotations" : {
-        "componentProperty" : [ {
-          "identifier" : "componentProperty",
-          "language" : "undefined",
-          "value" : "https://w3id.org/so-ontology#answeredIn",
+          "value" : "https://w3id.org/survey-ontology#answeredIn",
           "type" : "iri"
         } ]
       },
@@ -759,512 +724,513 @@
         "IRI-based" : "SliceBySession",
         "undefined" : "Slice by session"
       }
+    }, {
+      "iri" : "https://w3id.org/survey-ontology#SliceByQuestion",
+      "baseIri" : "https://w3id.org/survey-ontology",
+      "annotations" : {
+        "componentProperty" : [ {
+          "identifier" : "componentProperty",
+          "language" : "undefined",
+          "value" : "https://w3id.org/survey-ontology#completesQuestion",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SliceByQuestion",
+        "undefined" : "Slice by question"
+      }
     } ],
     "attributes" : [ "external" ],
-    "id" : "89"
+    "id" : "84"
+  }, {
+    "iri" : "http://purl.org/wf4ever/ro#ResearchObject",
+    "baseIri" : "http://purl.org/wf4ever/ro",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ResearchObject"
+    },
+    "subClasses" : [ "72" ],
+    "attributes" : [ "external" ],
+    "id" : "73"
   } ],
   "property" : [ {
-    "id" : "2",
+    "id" : "7",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "6",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "9",
-    "type" : "owl:datatypeProperty"
+    "id" : "10",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "16",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "19",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "22",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "25",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "37",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "39",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "40",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "45",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "47",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "48",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "49",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "50",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "51",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "54",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "56",
+    "id" : "25",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "58",
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "33",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "60",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "62",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "29",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "31",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "35",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "32",
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "67",
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "68",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "70",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "72",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "73",
-    "type" : "rdfs:SubClassOf"
+    "id" : "71",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "74",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "75",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "36",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "27",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "28",
-    "type" : "owl:objectProperty"
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "77",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "78",
+    "id" : "79",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "80",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "84",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "85",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "86",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "87",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "30",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "88",
-    "type" : "owl:datatypeProperty"
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
-    "range" : "4",
-    "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "2"
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "7"
   }, {
-    "iri" : "https://w3id.org/so-ontology#hasLink",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "hasLink",
-      "undefined" : "has link"
-    },
-    "domain" : "7",
-    "attributes" : [ "datatype" ],
-    "id" : "6"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#sessionId",
-    "baseIri" : "https://w3id.org/so-ontology",
+    "iri" : "https://w3id.org/survey-ontology#leadsTo",
+    "baseIri" : "https://w3id.org/survey-ontology",
     "range" : "11",
     "label" : {
-      "IRI-based" : "sessionId",
-      "undefined" : "session id"
+      "IRI-based" : "leadsTo",
+      "undefined" : "leads to"
     },
-    "domain" : "10",
-    "attributes" : [ "datatype" ],
-    "id" : "9"
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "10"
   }, {
-    "iri" : "https://w3id.org/so-ontology#hasValue",
-    "baseIri" : "https://w3id.org/so-ontology",
+    "iri" : "https://w3id.org/survey-ontology#hasStatus",
+    "baseIri" : "https://w3id.org/survey-ontology",
     "range" : "18",
     "label" : {
-      "IRI-based" : "hasValue",
-      "undefined" : "has value"
+      "IRI-based" : "hasStatus",
+      "undefined" : "has status"
     },
     "domain" : "17",
     "attributes" : [ "datatype" ],
     "id" : "16"
   }, {
-    "range" : "21",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "19"
-  }, {
-    "range" : "24",
-    "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "22"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
-    "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "26",
-    "label" : {
-      "IRI-based" : "topObjectProperty"
-    },
-    "domain" : "26",
-    "subproperty" : [ "27", "28", "29", "30", "31", "32", "33", "34", "35", "36" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "25"
-  }, {
-    "range" : "38",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "37"
-  }, {
-    "range" : "15",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "39"
-  }, {
-    "range" : "42",
-    "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "40"
-  }, {
-    "range" : "46",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "45"
-  }, {
-    "range" : "43",
-    "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "47"
-  }, {
-    "range" : "43",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "48"
-  }, {
-    "range" : "15",
-    "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "49"
-  }, {
-    "range" : "43",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "50"
-  }, {
-    "range" : "53",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "51"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#hasTitle",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "55",
-    "label" : {
-      "IRI-based" : "hasTitle",
-      "undefined" : "has title"
-    },
-    "domain" : "20",
-    "attributes" : [ "datatype" ],
-    "id" : "54"
-  }, {
-    "range" : "44",
-    "domain" : "57",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "56"
-  }, {
-    "range" : "53",
-    "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "58"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#hasAnswer",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "15",
-    "label" : {
-      "IRI-based" : "hasAnswer",
-      "undefined" : "has answer"
-    },
-    "superproperty" : [ "25" ],
-    "domain" : "1",
-    "attributes" : [ "object" ],
-    "id" : "33"
-  }, {
-    "range" : "44",
-    "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "60"
-  }, {
-    "range" : "0",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "62"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#completesQuestion",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "44",
-    "label" : {
-      "IRI-based" : "completesQuestion",
-      "undefined" : "completes question"
-    },
-    "superproperty" : [ "25" ],
-    "domain" : "1",
-    "attributes" : [ "object" ],
-    "id" : "29"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#completedFor",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "64",
-    "label" : {
-      "IRI-based" : "completedFor",
-      "undefined" : "completed for"
-    },
-    "superproperty" : [ "25" ],
-    "domain" : "10",
-    "attributes" : [ "object" ],
-    "id" : "31"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#startsWith",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "43",
-    "label" : {
-      "IRI-based" : "startsWith",
-      "undefined" : "starts with"
-    },
-    "superproperty" : [ "25" ],
-    "domain" : "20",
-    "attributes" : [ "object" ],
-    "id" : "35"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#hasVisualization",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "5",
-    "label" : {
-      "IRI-based" : "hasVisualization",
-      "undefined" : "has visualization"
-    },
-    "superproperty" : [ "25" ],
-    "domain" : "61",
-    "attributes" : [ "object" ],
-    "id" : "34"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#inSurveyProcedure",
-    "baseIri" : "https://w3id.org/so-ontology",
+    "iri" : "https://w3id.org/survey-ontology#hasAnswerText",
+    "baseIri" : "https://w3id.org/survey-ontology",
     "range" : "20",
-    "label" : {
-      "IRI-based" : "inSurveyProcedure",
-      "undefined" : "in survey procedure"
-    },
-    "superproperty" : [ "25" ],
-    "domain" : "43",
-    "attributes" : [ "object" ],
-    "id" : "32"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#hasOrderNumber",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "68",
-    "label" : {
-      "IRI-based" : "hasOrderNumber",
-      "undefined" : "has order number"
-    },
-    "domain" : "17",
-    "attributes" : [ "datatype" ],
-    "id" : "67"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#hasStatus",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "71",
-    "label" : {
-      "IRI-based" : "hasStatus",
-      "undefined" : "has status"
-    },
-    "domain" : "20",
-    "attributes" : [ "datatype" ],
-    "id" : "70"
-  }, {
-    "range" : "65",
-    "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "72"
-  }, {
-    "range" : "4",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "73"
-  }, {
-    "range" : "13",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "74"
-  }, {
-    "range" : "76",
-    "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "75"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#answeredIn",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "10",
-    "label" : {
-      "IRI-based" : "answeredIn",
-      "undefined" : "answered in"
-    },
-    "superproperty" : [ "25" ],
-    "domain" : "1",
-    "attributes" : [ "object" ],
-    "id" : "36"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#hasObservableVariable",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "52",
-    "label" : {
-      "IRI-based" : "hasObservableVariable",
-      "undefined" : "has observable variable"
-    },
-    "superproperty" : [ "25" ],
-    "domain" : "44",
-    "attributes" : [ "object" ],
-    "id" : "27"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#hasLatentVariable",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "59",
-    "label" : {
-      "IRI-based" : "hasLatentVariable",
-      "undefined" : "has latent variable"
-    },
-    "superproperty" : [ "25" ],
-    "domain" : "44",
-    "attributes" : [ "object" ],
-    "id" : "28"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#participantId",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "63",
-    "label" : {
-      "IRI-based" : "participantId",
-      "undefined" : "participant id"
-    },
-    "domain" : "23",
-    "attributes" : [ "datatype" ],
-    "id" : "77"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#hasCompletionTimestamp",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "79",
-    "label" : {
-      "IRI-based" : "hasCompletionTimestamp",
-      "undefined" : "has completion timestamp"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype" ],
-    "id" : "78"
-  }, {
-    "range" : "7",
-    "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "80"
-  }, {
-    "range" : "44",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "84"
-  }, {
-    "range" : "7",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "85"
-  }, {
-    "iri" : "https://w3id.org/so-ontology#hasAnswerText",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "81",
     "label" : {
       "IRI-based" : "hasAnswerText",
       "undefined" : "has answer text"
     },
     "domain" : "1",
     "attributes" : [ "datatype" ],
-    "id" : "86"
+    "id" : "19"
   }, {
-    "iri" : "https://w3id.org/so-ontology#hasPoints",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "82",
-    "label" : {
-      "IRI-based" : "hasPoints",
-      "undefined" : "has points"
-    },
+    "range" : "9",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "14",
     "domain" : "17",
-    "attributes" : [ "datatype" ],
-    "id" : "87"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
   }, {
-    "iri" : "https://w3id.org/so-ontology#leadsTo",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "43",
-    "label" : {
-      "IRI-based" : "leadsTo",
-      "undefined" : "leads to"
-    },
-    "superproperty" : [ "25" ],
-    "domain" : "43",
-    "attributes" : [ "object" ],
+    "range" : "11",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "11",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "30"
   }, {
-    "iri" : "https://w3id.org/so-ontology#hasText",
-    "baseIri" : "https://w3id.org/so-ontology",
-    "range" : "83",
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "11",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#startsWith",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "startsWith",
+      "undefined" : "starts with"
+    },
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "range" : "36",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "39",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#hasText",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "42",
     "label" : {
       "IRI-based" : "hasText",
       "undefined" : "has text"
     },
-    "domain" : "43",
+    "domain" : "11",
     "attributes" : [ "datatype" ],
-    "id" : "88"
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#hasVisualization",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasVisualization",
+      "undefined" : "has visualization"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#hasValue",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasValue",
+      "undefined" : "has value"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#hasOrderNumber",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasOrderNumber",
+      "undefined" : "has order number"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#completesQuestion",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "completesQuestion",
+      "undefined" : "completes question"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#inSurveyProcedure",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "inSurveyProcedure",
+      "undefined" : "in survey procedure"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "range" : "22",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "6",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#hasCompletionTimestamp",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "hasCompletionTimestamp",
+      "undefined" : "has completion timestamp"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#hasAnswer",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasAnswer",
+      "undefined" : "has answer"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "range" : "29",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#participantId",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "participantId",
+      "undefined" : "participant id"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "68"
+  }, {
+    "range" : "22",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "29",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#hasPoints",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "hasPoints",
+      "undefined" : "has points"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#hasLatentVariable",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasLatentVariable",
+      "undefined" : "has latent variable"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#hasLink",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasLink",
+      "undefined" : "has link"
+    },
+    "domain" : "29",
+    "attributes" : [ "datatype" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#hasTitle",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "hasTitle",
+      "undefined" : "has title"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#sessionId",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "sessionId",
+      "undefined" : "session id"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#answeredIn",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "answeredIn",
+      "undefined" : "answered in"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#completedFor",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "completedFor",
+      "undefined" : "completed for"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "https://w3id.org/survey-ontology#hasObservableVariable",
+    "baseIri" : "https://w3id.org/survey-ontology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasObservableVariable",
+      "undefined" : "has observable variable"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "83"
+  }, {
+    "range" : "15",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "69",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "73",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
   } ]
 }
