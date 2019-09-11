@@ -1,6 +1,6 @@
 # Survey Ontology
 
-Ontology for surveys based on the Coney data model. Published at [w3id.org/so-ontology](https://w3id.org/so-ontology). 
+Ontology for surveys based on the Coney data model. Published at [w3id.org/survey-ontology](https://w3id.org/survey-ontology). 
 
 ### Purpose and scope of the vocabulary
 
