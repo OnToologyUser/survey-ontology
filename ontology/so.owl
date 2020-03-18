@@ -2,21 +2,32 @@
 <rdf:RDF xmlns="https://w3id.org/survey-ontology#"
      xml:base="https://w3id.org/survey-ontology"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:qb="http://purl.org/linked-data/cube#"
      xmlns:ro="http://purl.org/wf4ever/ro#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:sur="https://w3id.org/survey-ontology#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://purl.org/vocab/frbr/core#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:wfdesc="http://purl.org/wf4ever/wfdesc#"
      xmlns:wfprov="http://purl.org/wf4ever/wfprov#"
-     xmlns:dcterms="http://purl.org/dc/terms/">
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:dcmi-terms="http://dublincore.org/documents/dcmi-terms/">
     <owl:Ontology rdf:about="https://w3id.org/survey-ontology#">
+        <owl:imports rdf:resource="http://purl.org/linked-data/cube#"/>
+        <owl:imports rdf:resource="http://purl.org/wf4ever/ro#"/>
+        <owl:imports rdf:resource="http://purl.org/wf4ever/wfdesc#"/>
+        <owl:imports rdf:resource="http://purl.org/wf4ever/wfprov#"/>
+        <owl:imports rdf:resource="http://w3id.org/rv-ontology#"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
         <dc:contributor xml:lang="en">Work on the Survey Ontology and Coney (https://survey.actionproject.eu/coney/) was partially supported by the ACTION project (grant agreement number 824603), co-funded by the European Commission under the Horizon 2020 Framework Programme.</dc:contributor>
         <dc:creator xml:lang="en">Damiano Scandolari</dc:creator>
         <dc:creator xml:lang="en">Gloria Re Calegari</dc:creator>
@@ -32,12 +43,6 @@
         <rdfs:label xml:lang="en">Survey Ontology</rdfs:label>
         <owl:versionInfo xml:lang="en">V 1.0, Release 2020</owl:versionInfo>
         <foaf:homepage rdf:resource="https://w3id.org/survey-ontology"/>
-        <owl:imports rdf:resource="http://w3id.org/rv-ontology#"/>
-        <owl:imports rdf:resource="http://purl.org/wf4ever/ro#"/>
-        <owl:imports rdf:resource="http://purl.org/wf4ever/wfdesc#"/>
-        <owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
-        <owl:imports rdf:resource="http://purl.org/linked-data/cube#"/>
-        <owl:imports rdf:resource="http://purl.org/wf4ever/wfprov#"/>
     </owl:Ontology>
     
 
@@ -123,6 +128,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/survey-ontology#answeredIn">
         <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#CompletedQuestion"/>
         <rdfs:range rdf:resource="https://w3id.org/survey-ontology#SurveyCompletionTask"/>
+        <rdfs:label>answered in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -142,6 +148,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/survey-ontology#completesQuestion">
         <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#CompletedQuestion"/>
         <rdfs:range rdf:resource="https://w3id.org/survey-ontology#Question"/>
+        <rdfs:label>completes question</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -635,7 +642,7 @@
 
     <owl:Class rdf:about="https://w3id.org/survey-ontology#SurveyTarget">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:label>Survey target</rdfs:label>
+        <rdfs:label>Survey Target</rdfs:label>
     </owl:Class>
     
 
@@ -657,6 +664,24 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://creativecommons.org/licenses/by/3.0/ -->
+
+    <owl:NamedIndividual rdf:about="http://creativecommons.org/licenses/by/3.0/"/>
+    
+
+
+    <!-- https://w3id.org/survey-ontology -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology"/>
+    
+
+
+    <!-- https://w3id.org/survey-ontology# -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#"/>
     
 
 
