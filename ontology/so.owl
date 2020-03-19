@@ -352,94 +352,11 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.org/linked-data/cube#DataSet -->
-
-    <owl:Class rdf:about="http://purl.org/linked-data/cube#DataSet"/>
-    
-
-
-    <!-- http://purl.org/linked-data/cube#Observation -->
-
-    <owl:Class rdf:about="http://purl.org/linked-data/cube#Observation"/>
-    
-
-
-    <!-- http://purl.org/linked-data/cube#Slice -->
-
-    <owl:Class rdf:about="http://purl.org/linked-data/cube#Slice"/>
-    
-
-
-    <!-- http://purl.org/linked-data/cube#SliceKey -->
-
-    <owl:Class rdf:about="http://purl.org/linked-data/cube#SliceKey"/>
-    
-
-
-    <!-- http://purl.org/wf4ever/ro#ResearchObject -->
-
-    <owl:Class rdf:about="http://purl.org/wf4ever/ro#ResearchObject"/>
-    
-
-
-    <!-- http://purl.org/wf4ever/ro#Resource -->
-
-    <owl:Class rdf:about="http://purl.org/wf4ever/ro#Resource"/>
-    
-
-
-    <!-- http://purl.org/wf4ever/wfdesc#Output -->
-
-    <owl:Class rdf:about="http://purl.org/wf4ever/wfdesc#Output"/>
-    
-
-
-    <!-- http://purl.org/wf4ever/wfdesc#Process -->
-
-    <owl:Class rdf:about="http://purl.org/wf4ever/wfdesc#Process"/>
-    
-
-
-    <!-- http://purl.org/wf4ever/wfprov#Artifact -->
-
-    <owl:Class rdf:about="http://purl.org/wf4ever/wfprov#Artifact"/>
-    
-
-
-    <!-- http://purl.org/wf4ever/wfprov#ProcessRun -->
-
-    <owl:Class rdf:about="http://purl.org/wf4ever/wfprov#ProcessRun"/>
-    
-
-
     <!-- http://w3id.org/rv-ontology#Model -->
 
     <owl:Class rdf:about="http://w3id.org/rv-ontology#Model">
         <rdfs:subClassOf rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     </owl:Class>
-    
-
-
-    <!-- http://w3id.org/rv-ontology#Variable -->
-
-    <owl:Class rdf:about="http://w3id.org/rv-ontology#Variable"/>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#Agent -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent"/>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#Entity -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
-    
-
 
     <!-- https://w3id.org/survey-ontology#Answer -->
 
@@ -654,8 +571,6 @@
         <rdfs:label>Talk</rdfs:label>
     </owl:Class>
     
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -664,42 +579,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://creativecommons.org/licenses/by/3.0/ -->
-
-    <owl:NamedIndividual rdf:about="http://creativecommons.org/licenses/by/3.0/"/>
-    
-
-
-    <!-- https://w3id.org/survey-ontology -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology"/>
-    
-
-
-    <!-- https://w3id.org/survey-ontology# -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#"/>
-    
-
-
-    <!-- https://w3id.org/survey-ontology#Checkbox -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#Checkbox">
-        <rdfs:label>Checkbox</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/survey-ontology#Dropdown -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#Dropdown">
         <rdf:type rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
         <rdfs:label>Dropdown</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://w3id.org/survey-ontology#Emoji -->
