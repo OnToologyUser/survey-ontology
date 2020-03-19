@@ -7,6 +7,7 @@
      xmlns:ro="http://purl.org/wf4ever/ro#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rvo="http://w3id.org/rv-ontology#"
      xmlns:sur="https://w3id.org/survey-ontology#"
      xmlns:wot="http://xmlns.com/wot/0.1/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -352,11 +353,20 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     <!-- http://w3id.org/rv-ontology#Model -->
 
     <owl:Class rdf:about="http://w3id.org/rv-ontology#Model">
         <rdfs:subClassOf rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
     </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rv-ontology#Variable -->
+
+    <owl:Class rdf:about="http://w3id.org/rv-ontology#Variable"/>
+    
+
 
     <!-- https://w3id.org/survey-ontology#Answer -->
 
@@ -571,6 +581,8 @@
         <rdfs:label>Talk</rdfs:label>
     </owl:Class>
     
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -579,12 +591,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
     <!-- https://w3id.org/survey-ontology#Dropdown -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#Dropdown">
         <rdf:type rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
         <rdfs:label>Dropdown</rdfs:label>
     </owl:NamedIndividual>
+    
 
 
     <!-- https://w3id.org/survey-ontology#Emoji -->
@@ -610,15 +626,6 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#Scale">
         <rdf:type rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
         <rdfs:label>Scale</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/survey-ontology#SliceByCompletionTask -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#SliceByCompletionTask">
-        <rdf:type rdf:resource="http://purl.org/linked-data/cube#SliceKey"/>
-        <rdfs:label>Slice By Completion Task</rdfs:label>
     </owl:NamedIndividual>
     
 
